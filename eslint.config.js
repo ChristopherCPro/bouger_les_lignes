@@ -132,4 +132,5 @@ export default defineConfig([
       ],
     },
   },
+  prettierConfig,
 ]);
