@@ -23,6 +23,7 @@ import { getHintUtils } from "@epic-web/client-hints";
 import { Suspense, useEffect } from "react";
 import { useViewport, ViewportProvider } from "./utils/contexts/useViewport";
 import { ClientOnly } from "./utils/wrapper/ClientOnly";
+import Footer from "./components/Footer";
 
 export type AppContext = {
   isMobile: boolean;
@@ -92,9 +93,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <ViewportProvider viewport={loaderData.viewport || 0}>
           <Header />
-          <main id="mainContent">
+          <main id="mainContent" className="relative">
             <LayoutContent>{children}</LayoutContent>
           </main>
+          <Footer />
           <Scripts />
         </ViewportProvider>
       </body>
