@@ -36,7 +36,9 @@ export default function HeaderMobile() {
 
   return (
     <>
-      <header id="mainHeader" className="z-50 h-20 w-full shadow-xl sticky top-0 bg-white">
+      <header
+        id="mainHeader"
+        className="sticky top-0 z-50 h-20 w-full bg-white shadow-xl">
         <div className="py-2. flex h-full w-full items-center justify-between px-10">
           <a href="/">
             <img src={logo} className="w-2/3" />
@@ -47,9 +49,9 @@ export default function HeaderMobile() {
       <div
         id="mobileMenu"
         className={cn(
-          "fixed top-20 right-0 left-0 bottom-0 z-30 flex  items-center justify-between w-full flex-col bg-back-blue transition-all duration-300 ease-in-out overflow-y-auto py-16",
+          "bg-back-blue fixed top-20 right-0 bottom-0 left-0 z-30 flex w-full flex-col items-center justify-between overflow-y-auto py-16 transition-all duration-300 ease-in-out",
           {
-            "translate-x-0 ": isOpen,
+            "translate-x-0": isOpen,
             "-translate-x-full": !isOpen,
           },
         )}>
@@ -66,9 +68,10 @@ export default function HeaderMobile() {
 
         <div className="w-full">
           <Button
-            to="/"
+            to="https://www.helloasso.com/associations/bouger-les-lignes-toulouse/adhesions/adhesion"
             className="bg-primary-orange mx-auto flex w-3/4 justify-center rounded-lg p-2.5 text-white"
             title="Faire un don"
+            externalLink
           />
         </div>
       </div>
