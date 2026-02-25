@@ -8,13 +8,16 @@ export default function HeaderDesktop() {
     { title: "Actualités", url: "/actualites" },
     { title: "FAQ", url: "/foire-aux-questions" },
     { title: "Contact", url: "/contact" },
-    { title: "Faire un don", url: "/" },
+    {
+      title: "Faire un don",
+      url: "https://www.helloasso.com/associations/bouger-les-lignes-toulouse/adhesions/adhesion",
+    },
   ];
 
   return (
     <header
       id="mainHeader"
-      className="h-20 w-full shadow-xl sticky top-0 z-40 bg-white">
+      className="sticky top-0 z-40 h-20 w-full bg-white shadow-xl">
       <div className="flex w-full items-center justify-between px-20 py-2.5">
         <a href="/">
           <img src={logo} />

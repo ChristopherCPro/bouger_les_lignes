@@ -3,6 +3,7 @@ import picture from "/media/homepage/img_hp-1.png";
 import Card, { type CardProps, type TypeCards } from "~/components/Card";
 import Cards from "~/components/Cards";
 import Button from "~/components/ui/Button/Button";
+import MediaText from "~/components/MediaText";
 
 export default function Home() {
   const cardService = [
@@ -90,29 +91,16 @@ export default function Home() {
     <div className="flex flex-col gap-18">
       <Banner />
       <div className="container m-auto flex flex-col gap-18">
-        <div className="m-auto flex flex-col md:flex-row">
-          <div className="md:w-1/3">
-            <img
-              src={picture}
-              className="m-auto"
-              alt="image d'un père tient sa fille par la main, ils sont tous les deux vue de dos et avancent sur un chemin"
-            />
-          </div>
-          <div className="flex items-center justify-center md:w-2/3">
-            <div className="w-3/4">
-              <h2 className="intertitre after:bg-secondary-blue relative mb-9 inline-block after:absolute after:-bottom-1.25 after:left-[25%] after:h-1 after:w-3/4 after:content-[''] md:after:left-[50%] md:after:w-full">
-                Tout commence par l'humain
-              </h2>
-              <p className="text-justify md:text-left">
-                Notre approche repose sur l’écoute, la pédagogie, l’empathie et
-                la bienveillance. Nous croyons à la force du dialogue comme
-                moyen et outil de prévention. Chaque action vise à transformer
-                comme pour l’effet colibri. (Les formations sont payantes sur
-                devis.)
-              </p>
-            </div>
-          </div>
-        </div>
+        <MediaText
+          media={picture}
+          altDescription="image d'un père tient sa fille par la main, ils sont tous les deux vue de dos et avancent sur un chemin"
+          mediaPosition="left"
+          title="Tout commence par l'humain"
+          description=" Notre approche repose sur l’écoute, la pédagogie, l’empathie et la
+            bienveillance. Nous croyons à la force du dialogue comme moyen et
+            outil de prévention. Chaque action vise à transformer comme pour
+            l’effet colibri. (Les formations sont payantes sur devis.)"
+        />
 
         <Card
           type="CallToDonation"
