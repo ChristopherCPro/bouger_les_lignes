@@ -1,5 +1,5 @@
 import Button from "~/components/ui/Button/Button";
-import background from "/media/components/card/calltodonation/bg_ctd.png";
+import background from "app/assets/media/components/card/calltodonation/bg_ctd.png";
 import type { CardProps } from "../..";
 
 export default function CallToDonation({ title, description, to }: CardProps) {

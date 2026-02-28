@@ -1,6 +1,6 @@
 import { navigation } from "~/components/Header/Mobile/HeaderMobile";
 
-import logo from "/media/logo.webp";
+import logo from "app/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
 import { Icon } from "~/components/ui/Icon";
 import BurgerButton from "~/components/ui/BurgerButton/BurgerButton";
@@ -9,9 +9,9 @@ export default function FooterDesktop() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary-blue min-h-125 flex flex-col gap-9 py-9 text-white">
+    <footer className="bg-secondary-blue flex min-h-125 flex-col gap-9 py-9 text-white">
       <div className="container mx-auto flex gap-8">
-        <div className="w-1/3 ">
+        <div className="w-1/3">
           {" "}
           <ul className="flex w-3/4 list-none flex-col gap-3.5">
             {navigation.map((i, index) => {
@@ -27,7 +27,7 @@ export default function FooterDesktop() {
             })}
           </ul>
         </div>
-        <div className="w-1/3 ">
+        <div className="w-1/3">
           <h3>Lorem Ipsum</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
@@ -54,7 +54,7 @@ export default function FooterDesktop() {
         <Button to="/" img={logo} title="Retour à l'accueil" type="image" />
       </div>
       <div className="flex w-full justify-center">
-        <ul className="list-none flex space-x-8">
+        <ul className="flex list-none space-x-8">
           <li>
             <Button
               title="Suivez nous sur le réseau social X"
@@ -78,7 +78,7 @@ export default function FooterDesktop() {
           </li>
         </ul>
       </div>
-      <div className="flex w-full items-center flex-col font-verdana font-bold text-xs gap-3">
+      <div className="font-verdana flex w-full flex-col items-center gap-3 text-xs font-bold">
         <p>
           <span className="font-thin">&copy; {currentYear}</span> - Bouger les
           lignes

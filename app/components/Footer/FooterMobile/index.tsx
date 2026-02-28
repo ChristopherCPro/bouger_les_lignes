@@ -1,6 +1,6 @@
 import { navigation } from "~/components/Header/Mobile/HeaderMobile";
 
-import logo from "/media/logo.webp";
+import logo from "app/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
 import { Icon } from "~/components/ui/Icon";
 import BurgerButton from "~/components/ui/BurgerButton/BurgerButton";
@@ -9,8 +9,8 @@ export default function FooterMobile() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary-blue min-h-125 flex flex-col gap-9 py-9 text-white">
-      <div className="container mx-auto flex flex-col gap-8 items-center">
+    <footer className="bg-secondary-blue flex min-h-125 flex-col gap-9 py-9 text-white">
+      <div className="container mx-auto flex flex-col items-center gap-8">
         <div className="text-center">
           {" "}
           <ul className="flex list-none flex-col gap-3.5">
@@ -45,7 +45,7 @@ export default function FooterMobile() {
           </p>
           <Button
             to="/"
-            className="hover:text-secondary-blue flex w-fit cursor-pointer justify-center rounded-lg border border-white p-2.5 text-white transition-all duration-300 hover:bg-white mx-auto"
+            className="hover:text-secondary-blue mx-auto flex w-fit cursor-pointer justify-center rounded-lg border border-white p-2.5 text-white transition-all duration-300 hover:bg-white"
             title="Accéder au formulaire"
           />
         </div>
@@ -54,7 +54,7 @@ export default function FooterMobile() {
         <Button to="/" img={logo} title="Retour à l'accueil" type="image" />
       </div>
       <div className="flex w-full justify-center">
-        <ul className="list-none flex space-x-8">
+        <ul className="flex list-none space-x-8">
           <li>
             <Button
               title="Suivez nous sur le réseau social X"
@@ -78,7 +78,7 @@ export default function FooterMobile() {
           </li>
         </ul>
       </div>
-      <div className="flex w-full items-center flex-col font-verdana font-bold text-xs gap-3 pb-9">
+      <div className="font-verdana flex w-full flex-col items-center gap-3 pb-9 text-xs font-bold">
         <p>
           <span className="font-thin">&copy; {currentYear}</span> - Bouger les
           lignes

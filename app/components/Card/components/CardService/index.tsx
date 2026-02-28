@@ -1,5 +1,5 @@
 import Button from "~/components/ui/Button/Button";
-import picture from "/media/components/card/services/img_service-1.png";
+import picture from "app/assets/media/components/card/services/img_service-1.png";
 import type { CardProps } from "../..";
 
 export default function CardService({ title, description, to }: CardProps) {

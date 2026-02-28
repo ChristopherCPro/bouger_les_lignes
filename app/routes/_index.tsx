@@ -1,5 +1,5 @@
 import Banner from "~/components/ui/Banner";
-import picture from "/media/homepage/img_hp-1.png";
+import picture from "app/assets/media/homepage/img_hp-1.png";
 import Card, { type CardProps, type TypeCards } from "~/components/Card";
 import Cards from "~/components/Cards";
 import Button from "~/components/ui/Button/Button";
@@ -33,57 +33,57 @@ export default function Home() {
   const insta = [
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
     {
       type: "Media" as TypeCards,
-      image: "/media/components/card/services/img_service-1.png",
+      image: "app/assets/media/components/card/services/img_service-1.png",
     },
   ];
 
   const partenaire = [
     {
       type: "Media" as TypeCards,
-      image: "/media/partenaires/toulouse-olympique.png",
+      image: "app/assets/media/partenaires/toulouse-olympique.png",
     },
 
     {
       type: "Media" as TypeCards,
-      image: "/media/partenaires/toulouse-olympique.png",
+      image: "app/assets/media/partenaires/toulouse-olympique.png",
     },
 
     {
       type: "Media" as TypeCards,
-      image: "/media/partenaires/toulouse-olympique.png",
+      image: "app/assets/media/partenaires/toulouse-olympique.png",
     },
 
     {
       type: "Media" as TypeCards,
-      image: "/media/partenaires/toulouse-olympique.png",
+      image: "app/assets/media/partenaires/toulouse-olympique.png",
     },
   ];
 

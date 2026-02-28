@@ -1,4 +1,4 @@
-import background from "/media/bannerIndex.jpg";
+import background from "~/assets/media/bannerIndex.jpg";
 import Button from "../Button/Button";
 
 export default function Banner() {

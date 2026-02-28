@@ -1,5 +1,5 @@
 import BurgerButton from "~/components/ui/BurgerButton/BurgerButton";
-import logo from "/media/logo.webp";
+import logo from "app/assets/media/logo.webp";
 import { useState } from "react";
 import { cn } from "~/utils/ui";
 import Button from "~/components/ui/Button/Button";

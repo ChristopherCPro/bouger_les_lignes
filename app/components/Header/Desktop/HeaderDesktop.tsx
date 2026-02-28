@@ -1,4 +1,4 @@
-import logo from "/media/logo.webp";
+import logo from "app/assets/media/logo.webp";
 import { cn } from "~/utils/ui";
 
 export default function HeaderDesktop() {

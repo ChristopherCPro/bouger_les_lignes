@@ -1,11 +1,11 @@
 import Intro from "~/components/Intro";
 import Text from "~/components/Text";
-import imgIntro from "/media/pages/propos/img_asso-1.webp";
-import member1 from "/media/pages/propos/img_member-1.png";
-import member2 from "/media/pages/propos/img_member-2.png";
-import member3 from "/media/pages/propos/img_member-3.png";
-import member4 from "/media/pages/propos/img_member-4.png";
-import member5 from "/media/pages/propos/img_member-5.png";
+import imgIntro from "app/assets/media/pages/propos/img_asso-1.webp";
+import member1 from "app/assets/media/pages/propos/img_member-1.png";
+import member2 from "app/assets/media/pages/propos/img_member-2.png";
+import member3 from "app/assets/media/pages/propos/img_member-3.png";
+import member4 from "app/assets/media/pages/propos/img_member-4.png";
+import member5 from "app/assets/media/pages/propos/img_member-5.png";
 
 import MediaText from "~/components/MediaText";
 import CallToDonation from "~/components/Card/components/CallToDonation";

@@ -1,3 +1,3 @@
 export default function ServiceIndex() {
-  return <div>INdex</div>;
+  return <h1>Je suis le service index</h1>;
 }
