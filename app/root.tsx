@@ -10,7 +10,7 @@ import {
   type LoaderFunctionArgs,
 } from "react-router";
 import "@fontsource-variable/montserrat";
-
+import { Toaster } from "react-hot-toast";
 import type { Route } from "./+types/root";
 import "./app.css";
 import Header from "./components/Header";
@@ -94,6 +94,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ViewportProvider viewport={loaderData.viewport || 0}>
           <Header />
           <main id="mainContent" className="relative">
+            <Toaster
+              position="top-center"
+              toastOptions={{ duration: 6000, removeDelay: 1000 }}
+            />
             <LayoutContent>{children}</LayoutContent>
           </main>
           <Footer />

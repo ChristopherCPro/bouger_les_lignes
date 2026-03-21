@@ -44,7 +44,7 @@ export default function FooterDesktop() {
             consequatur.
           </p>
           <Button
-            to="/"
+            to="/contact"
             className="hover:text-secondary-blue flex w-fit cursor-pointer justify-center rounded-lg border border-white p-2.5 text-white transition-all duration-300 hover:bg-white"
             title="Accéder au formulaire"
           />

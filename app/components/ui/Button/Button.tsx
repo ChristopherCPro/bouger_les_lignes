@@ -26,7 +26,7 @@ export default function Button({
       <a
         href={to}
         className={cn(className)}
-        rel="noopener noreferrer"
+        rel={externalLink ? "noopener noreferrer" : undefined}
         target={externalLink ? "_blank" : undefined}>
         {img ? <img src={img} alt={title} /> : <p>{title}</p>}
       </a>
@@ -38,7 +38,7 @@ export default function Button({
       <a
         href={to}
         className={cn(className, {
-          "flex gap-2 items-center": icon,
+          "flex items-center gap-2": icon,
         })}
         rel="noopener noreferrer"
         target={externalLink ? "_blank" : undefined}
@@ -52,7 +52,7 @@ export default function Button({
     <a
       href={to}
       className={cn(className, {
-        "flex gap-2 items-center": icon,
+        "flex items-center gap-2": icon,
       })}
       target={externalLink ? "_blank" : undefined}
       rel="noopener noreferrer">

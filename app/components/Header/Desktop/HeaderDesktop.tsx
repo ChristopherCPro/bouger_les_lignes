@@ -1,22 +1,12 @@
 import logo from "app/assets/media/logo.webp";
 import { useState } from "react";
 import { cn } from "~/utils/ui";
-
-interface Navigation {
-  title: string;
-  url: string;
-  isExternal: boolean;
-  subNav?: {
-    title: string;
-    url: string;
-    isExternal: boolean;
-  }[];
-}
+import type { NavigationTypes } from "..";
 
 export default function HeaderDesktop() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const navigation: Navigation[] = [
+  const navigation: NavigationTypes[] = [
     {
       title: "Nos Services",
       url: "/services",
