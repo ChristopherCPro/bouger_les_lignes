@@ -1,24 +1,43 @@
+import { cn } from "~/utils/ui";
+
 interface TextProps {
   title?: string;
-  description: string;
+  sizeTitle?: "h2" | "h3" | "h4" | "h5" | "h6";
+  description: { desc: string }[];
   underline?: boolean;
+  classname?: string;
 }
 
-export default function Text({ title, description, underline }: TextProps) {
+export default function Text({
+  title,
+  sizeTitle,
+  description,
+  underline,
+  classname,
+}: TextProps) {
+  const TitleTag = sizeTitle || "h2";
   return (
     <div className="w-full px-9">
       {title && underline ? (
-        <h2 className="intertitre after:bg-secondary-blue relative mb-9 inline-block after:absolute after:-bottom-1.25 after:left-[25%] after:h-1 after:w-3/4 after:content-[''] md:after:left-[50%] md:after:w-full">
+        <TitleTag
+          className={cn(
+            "after:bg-secondary-blue relative mb-9 inline-block after:absolute after:-bottom-1.25 after:left-[25%] after:h-1 after:w-3/4 after:content-[''] md:after:left-[50%] md:after:w-full",
+            classname,
+            { "md:ms-16": sizeTitle != "h2" },
+          )}>
           {title}
-        </h2>
+        </TitleTag>
       ) : (
-        <h2 className="intertitre mb-9"> {title}</h2>
+        <TitleTag className={cn("mb-9", classname)}> {title}</TitleTag>
       )}
 
-      <div
-        className="m-auto w-11/12 text-justify md:text-left"
-        dangerouslySetInnerHTML={{ __html: description }}
-      />
+      {description.map((paragraph: { desc: string }, index) => (
+        <div
+          key={index}
+          className="m-auto w-9/12 text-justify md:text-left"
+          dangerouslySetInnerHTML={{ __html: paragraph.desc }}
+        />
+      ))}
     </div>
   );
 }

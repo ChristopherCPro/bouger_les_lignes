@@ -15,7 +15,7 @@
   --color-primary-orange: #e8531b;
   --color-primary-grey: #2b2b2b;
 
-  --intertitre: " font-montserrat text-xl md:text-2xl mb-4 font-bold";
+  --intertitre: "font-montserrat text-xl md:text-2xl mb-4 font-bold";
 }
 
 @layer base {
