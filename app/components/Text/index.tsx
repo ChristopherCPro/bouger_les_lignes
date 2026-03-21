@@ -6,6 +6,7 @@ interface TextProps {
   description: { desc: string }[];
   underline?: boolean;
   classname?: string;
+  fullWidth?: boolean;
 }
 
 export default function Text({
@@ -14,6 +15,7 @@ export default function Text({
   description,
   underline,
   classname,
+  fullWidth,
 }: TextProps) {
   const TitleTag = sizeTitle || "h2";
   return (
@@ -34,7 +36,10 @@ export default function Text({
       {description.map((paragraph: { desc: string }, index) => (
         <div
           key={index}
-          className="m-auto w-9/12 text-justify md:text-left"
+          className={cn(
+            "m-auto w-9/12 text-justify md:text-left",
+            fullWidth ? "w-full" : "",
+          )}
           dangerouslySetInnerHTML={{ __html: paragraph.desc }}
         />
       ))}

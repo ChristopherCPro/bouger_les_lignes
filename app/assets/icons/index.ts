@@ -6,6 +6,9 @@ import tiktok from "./tiktok.svg?react";
 import clock from "./clock.svg?react";
 import profil from "./profil.svg?react";
 import pin from "./pin.svg?react";
+import letter from "./letter.svg?react";
+import phone from "./phone.svg?react";
+import map from "./map.svg?react";
 
 export default {
   twitter: twitter,
@@ -16,6 +19,9 @@ export default {
   clock: clock,
   profil: profil,
   pin: pin,
+  letter: letter,
+  phone: phone,
+  map: map,
 };
 
 export type IconName =
@@ -26,4 +32,7 @@ export type IconName =
   | "tiktok"
   | "clock"
   | "profil"
-  | "pin";
+  | "pin"
+  | "letter"
+  | "phone"
+  | "map";

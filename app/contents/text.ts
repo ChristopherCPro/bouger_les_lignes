@@ -728,3 +728,15 @@ export const formation7 = {
     info_sup: "Ce module est modulable selon le public et la durée souhaitée.",
   },
 };
+
+export const contact = {
+  intro: [
+    {
+      paragraph: [
+        {
+          desc: "Mauris viverra metus in augue rutrum tristique. Nulla rhoncus nunc rhoncus enim vulputate, gravida bibendum sapien maximus. Donec mollis tortor sed leo mollis, a posuere massa euismod. Donec hendrerit eu dui a accumsan. Fusce cursus neque vel quam posuere",
+        },
+      ],
+    },
+  ],
+};
