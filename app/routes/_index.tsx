@@ -11,24 +11,26 @@ export default function Home() {
   const cardService = [
     {
       type: "Service" as TypeCards,
-      title: "Service",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+      title: "Capitole",
+      description: "Petit descriptif a développer",
     },
     {
       type: "Service" as TypeCards,
-      title: "Service 2",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+      title: "Saint-Sernin",
+      description: "Petit descriptif a développer",
+      to: "services/sernin/journee-pedagogique",
     },
     {
       type: "Service" as TypeCards,
-      title: "Service 3",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+      title: "Carmes",
+      description: "Petit descriptif a développer",
+      to: "services/carmes/sensibilisation-des-jeunes",
+    },
+    {
+      type: "Service" as TypeCards,
+      title: "Esquirol",
+      description: "Petit descriptif a développer",
+      to: "services/esquirol/sensibilisation-enfants",
     },
   ];
 
@@ -120,7 +122,7 @@ export default function Home() {
           <h3 className="intertitre">Découvrez-nos modules personnalisables</h3>
 
           <div className="flex justify-center gap-9">
-            <Cards maxCardPerLine={3} card={cardService} />
+            <Cards maxCardPerLine={4} card={cardService} />
           </div>
         </div>
       </div>

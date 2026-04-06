@@ -13,7 +13,6 @@ const resolver = zodResolver(formContactSchema);
 
 export default function FormContact() {
   const data = useActionData();
-  console.log(data);
   useEffect(() => {
     if (data && data.success) {
       toast.custom((t) => (

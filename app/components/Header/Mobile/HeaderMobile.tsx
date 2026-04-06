@@ -50,9 +50,6 @@ export default function HeaderMobile() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isSubMenuOpen, setIsSubMenuOpen] = useState<boolean>(false);
 
-  console.log("Menu", isOpen);
-  console.log("Sub Menu", isSubMenuOpen);
-
   const handleToggle = () => {
     setIsOpen((prev) => !prev);
 
