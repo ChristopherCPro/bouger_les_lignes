@@ -5,9 +5,9 @@ export default function Banner() {
   return (
     <div className="flex flex-col">
       <div
-        className="flex bg-cover bg-fixed bg-center bg-no-repeat"
+        className="flex h-[75vh] items-center bg-cover bg-fixed bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${background})` }}>
-        <div className="flex h-[75vh] w-1/2 items-center bg-black/45 backdrop-blur-xs">
+        <div className="flex h-1/2 w-full items-center bg-black/45 backdrop-blur-xs md:h-full md:w-1/2">
           <div className="mx-auto text-center text-white">
             <h1>
               <span className="mb-4 block">Agir - Comprendre - Prévenir</span>

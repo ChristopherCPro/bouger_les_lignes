@@ -9,6 +9,10 @@ import pin from "./pin.svg?react";
 import letter from "./letter.svg?react";
 import phone from "./phone.svg?react";
 import map from "./map.svg?react";
+import chevronDown from "./chevronDown.svg?react";
+import chevronUp from "./chevronUp.svg?react";
+import chevronLeft from "./chevronLeft.svg?react";
+import chevronRight from "./chevronRight.svg?react";
 
 export default {
   twitter: twitter,
@@ -22,6 +26,10 @@ export default {
   letter: letter,
   phone: phone,
   map: map,
+  chevronDown: chevronDown,
+  chevronUp: chevronUp,
+  chevronLeft: chevronLeft,
+  chevronRight: chevronRight,
 };
 
 export type IconName =
@@ -35,4 +43,8 @@ export type IconName =
   | "pin"
   | "letter"
   | "phone"
+  | "chevronDown"
+  | "chevronUp"
+  | "chevronLeft"
+  | "chevronRight"
   | "map";

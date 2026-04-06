@@ -60,7 +60,6 @@ export default function HeaderDesktop() {
       isExternal: true,
     },
   ];
-  const handleMouseOver = () => {};
 
   return (
     <header
