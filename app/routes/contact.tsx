@@ -2,7 +2,7 @@ import type { ActionFunctionArgs } from "react-router";
 import { getValidatedFormData } from "remix-hook-form";
 import FormContact from "~/components/FormContact";
 import { formContactSchema } from "~/utils/schema/formContactSchema";
-import { success, type z } from "zod";
+import { type z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { sendContactEmail } from "~/utils/mailling/sendMail";
 import { contact } from "~/contents/text";
@@ -42,9 +42,9 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 export default function Contact() {
   return (
     <div className="flex h-full flex-col gap-9 py-9">
-      <div className="container m-auto flex h-full flex-col gap-9">
-        <div className="md-mx-0 mx-3 flex h-full w-full flex-col items-center gap-3 md:flex-row">
-          <div className="hidden gap-9 md:flex md:w-1/2 md:flex-col">
+      <div className="container m-auto flex h-full flex-col gap-9 px-9 md:px-0">
+        <div className="flex h-full w-full flex-col-reverse items-center gap-3 md:flex-col md:flex-row">
+          <div className="flex flex-col gap-9 md:w-1/2">
             <Text description={contact.intro[0].paragraph} fullWidth />
             <div className="flex flex-col gap-3 px-9">
               <div>
