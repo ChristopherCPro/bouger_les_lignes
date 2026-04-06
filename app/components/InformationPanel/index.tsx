@@ -11,7 +11,6 @@ interface infoType {
 }
 
 export default function InformationPanel(info: infoType) {
-  console.log(info);
   return (
     <div className="flex flex-col gap-9">
       <div className="border-tertiary-blue flex min-h-44 flex-col gap-6 rounded-lg border border-t-15 p-5">
