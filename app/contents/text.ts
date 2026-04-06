@@ -159,53 +159,51 @@ export const serviceIndex = {
 };
 
 export const formation1 = {
-  title: "Sensibilisation au consentement et respect du corps",
+  title: "CAPITOLE | Session structurée",
   resume:
-    "Ce module aborde le consentement, le respect des limites corporelles et la communication bienveillante.",
+    "Format idéal pour une première sensibilisation des équipes souhaitant renforcer leurs repères face aux situations de violences.",
   info_spec:
     "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
   intro: {
-    public: "Tout public",
-    duree: "1h à 3h30",
+    public: "Adultes",
+    duree: "3h30",
     lieu: "Sur Site",
   },
   info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur devis",
+    nbr_participant:
+      "15 pers. max : équipes professionnelles, structures éducatives, associations, clubs sportifs, collectivités, entreprises",
+    tarif: "À partir de 600€",
     prerequis: "Aucun",
     formateur: "Equipe Bouger les Lignes",
   },
 
   contenu: {
     objectif: {
-      title: "Objectifs pédagogiques :",
+      title: "Objectifs",
       list: [
         {
           libelle:
-            "Comprendre la notion de consentement et de limites corporelles.",
-        },
-        {
-          libelle:
-            "Identifier les situations non consensuelles et savoir réagir.",
-        },
-        {
-          libelle:
-            "Donner des repères concrets et des outils de communication respectueuses.",
+            "Clarifier les repères essentiels, comprendre les mécanismes des violences et adopter une posture adaptée face aux situations sensibles.",
         },
       ],
     },
     deroule: {
-      title: "Contenus et déroulés :",
+      title: "Contenu :",
       list: [
         {
-          libelle: "Introduction et cadre de sécurité.",
+          libelle: "Repères : respect, limites et consentement",
         },
         {
-          libelle:
-            "Différentes approches (vocabulaire, reconnaissance des ressentis, situations concrètes, verbalisation des limites…)",
+          libelle: "Formes de violences et mécanismes",
         },
         {
-          libelle: "Débrief et repères légaux/pratiques.",
+          libelle: "Signaux d’alerte",
+        },
+        {
+          libelle: "Posture face à la parole",
+        },
+        {
+          libelle: "Orientation vers les ressources",
         },
       ],
     },
@@ -213,16 +211,23 @@ export const formation1 = {
       title: "Modalités et moyens pédagogiques :",
       list: [
         {
-          libelle: "Apports théoriques et analytiques.",
+          libelle:
+            "Échange préalable avec la structure pour identifier les besoins",
         },
         {
-          libelle: "Cas pratiques et mises en situation.",
+          libelle: "Intervention adaptée au public concerné",
         },
         {
-          libelle: "Ludique, participatives.",
+          libelle: "Apports pédagogiques et exemples concrets",
         },
         {
-          libelle: "Débats, échanges, discussions guidées….",
+          libelle: "Réflexion collective et partage d’expériences",
+        },
+        {
+          libelle: "Repères pratiques pour agir",
+        },
+        {
+          libelle: "Préparation pédagogique et conception des contenus",
         },
       ],
     },
@@ -241,60 +246,53 @@ export const formation1 = {
   },
 };
 export const formation2 = {
-  title: "Sensibilisation aux violences conjugales et familiales",
-  resume:
-    "Ce module aide à comprendre les mécanismes des violences familiales, à repérer les signaux…",
+  title: "SAINT- SERNIN | Journée pédagogique",
+  resume: "Permet un travail approfondi avec les équipes.",
   info_spec:
     "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
   intro: {
-    public: "Tout public",
-    duree: "1h à 3h30 (selon le module)",
+    public: "Adultes",
+    duree: "7h",
     lieu: "Sur site",
   },
   info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur devis",
+    nbr_participant:
+      "15 pers. max : équipes professionnelles, structures éducatives, associations, clubs sportifs, collectivités, entreprises",
+    tarif: "1200€",
     prerequis: "Aucun",
     formateur: "Equipe Bouger les Lignes",
   },
 
   contenu: {
     objectif: {
-      title: "Objectifs pédagogiques :",
+      title: "Objectifs",
       list: [
         {
-          libelle: "Identifier les différentes formes de violences.",
-        },
-        {
-          libelle: "Comprendre les rôles des victimes, témoins et auteurs.",
-        },
-        {
-          libelle: "Connaître les ressources et voies d’actions.",
-        },
-        {
-          libelle: "Sensibiliser aux conséquences des actes violents.",
+          libelle:
+            "Approfondir les pratiques et renforcer la cohérence d’équipe face aux situations de violences.",
         },
       ],
     },
     deroule: {
-      title: "Contenus et déroulés :",
+      title: "Contenus",
       list: [
         {
-          libelle:
-            "Présentation des différents types de violences et mécanismes.",
+          period: "Matin",
+          title: "Matin : Repères et compréhension",
+          list_deroul: [
+            { libelle: "Mécanismes des violences" },
+            { libelle: "Signaux d’alerte" },
+            { libelle: "Repères juridiques" },
+          ],
         },
         {
-          libelle: "Cadre législatif essentiel.",
-        },
-        {
-          libelle: "Etudes de cas et mises en situation.",
-        },
-        {
-          libelle: "Orientation et ressources locales.",
-        },
-        {
-          libelle:
-            "Mention « auteur » : responsabilités, risques, sanctions et accompagnement possible.",
+          period: "Après-Midi",
+          title: "Après-midi : Mise en pratique",
+          list_deroul: [
+            { libelle: "Analyse de situations" },
+            { libelle: "Mises en situation" },
+            { libelle: "Travail collectif sur la posture" },
+          ],
         },
       ],
     },
@@ -302,10 +300,23 @@ export const formation2 = {
       title: "Modalités et moyens pédagogiques :",
       list: [
         {
-          libelle: "Apports interactifs, échanges, cas pratiques.",
+          libelle:
+            "Échange préalable avec la structure pour identifier les besoins",
         },
         {
-          libelle: "Posture claire et sécurisante.",
+          libelle: "Intervention adaptée au public concerné",
+        },
+        {
+          libelle: "Apports pédagogiques et exemples concrets",
+        },
+        {
+          libelle: "Réflexion collective et partage d’expériences",
+        },
+        {
+          libelle: "Repères pratiques pour agir",
+        },
+        {
+          libelle: "Préparation pédagogique et conception des contenus",
         },
       ],
     },
@@ -324,59 +335,49 @@ export const formation2 = {
   },
 };
 export const formation3 = {
-  title: "Sensibilisation aux violences sexuelles",
-  resume:
-    "L’approche combine émotion, clarté et sécurité juridique, pour aborder un sujet complexe avec sensibilité et précision.",
+  title: "CARMES | Sensibilisation des jeunes",
+  resume: "",
   info_spec:
     "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
   intro: {
-    public: "Tout public",
-    duree: "1h à 3h30 (selon le module)",
+    public: "Collégien/Lycéen",
+    duree: "1h30",
     lieu: "Sur site",
   },
   info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur devis",
+    nbr_participant: "15 pers. max",
+    tarif: "300€",
     prerequis: "Aucun",
-    formateur: "Eéquipe Bouger les Lignes",
+    formateur: "Équipe Bouger les Lignes",
   },
 
   contenu: {
     objectif: {
-      title: "Objectifs pédagogiques :",
+      title: "Objectifs",
       list: [
         {
-          libelle: "Comprendre les différentes formes de violences sexuelles.",
-        },
-        {
-          libelle: "Donner des repères légaux et pratiques clairs.",
-        },
-        {
-          libelle: "Savoir réagit et orienter en cas de situations révélée.",
-        },
-        {
           libelle:
-            "Sensibiliser aussi au volet auteur (sanctions, accompagnement, prévention de la récidive).",
+            "Permettre aux adolescents de mieux comprendre les violences, leurs mécanismes et leurs impacts afin de favoriser une réflexion sur leurs comportements et leurs relations.",
         },
       ],
     },
     deroule: {
-      title: "Contenus et déroulés :",
+      title: "Contenus",
       list: [
         {
-          libelle: "Définition et cadre législatif.",
+          libelle: "Respect, limites, intimité et consentement",
         },
         {
-          libelle: "Consentement et notion de contrainte.",
+          libelle: "Différence conflit / violence",
         },
         {
-          libelle: "Études de cas et discussions.",
+          libelle: "Violences sexuelles et pression sociale",
         },
         {
-          libelle: "Protocoles d’orientation et ressources.",
+          libelle: "Cyberharcèlement",
         },
         {
-          libelle: "Mention «auteur» : sanctions, suivi possible.",
+          libelle: "Identifier les situations à risque",
         },
       ],
     },
@@ -384,10 +385,23 @@ export const formation3 = {
       title: "Modalités et moyens pédagogiques :",
       list: [
         {
-          libelle: "Mises en situation.",
+          libelle:
+            "Échange préalable avec la structure pour identifier les besoins",
         },
         {
-          libelle: "Apports juridiques simplifiés.",
+          libelle: "Intervention adaptée au public concerné",
+        },
+        {
+          libelle: "Apports pédagogiques et exemples concrets",
+        },
+        {
+          libelle: "Réflexion collective et partage d’expériences",
+        },
+        {
+          libelle: "Repères pratiques pour agir",
+        },
+        {
+          libelle: "Préparation pédagogique et conception des contenus",
         },
       ],
     },
@@ -406,55 +420,49 @@ export const formation3 = {
   },
 };
 export const formation4 = {
-  title: "Sensibilisation au harcèlement scolaire",
-  resume:
-    "Ce module permet d’identifier les mécanismes du harcèlement, de comprendre le rôle des témoins et d’encourager une posture de respect et d’entraide.",
+  title: "ESQUIROL | Sensibilisation enfants",
+  resume: "",
   info_spec:
     "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
   intro: {
-    public: "Enfants, adolescents, équipes éducatives, encadrant.es, parents…",
-    duree: "1h à 3h30 (selon le module)",
+    public: "Élèves du primaire",
+    duree: "1h",
     lieu: "Sur site",
   },
   info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur Devis",
+    nbr_participant: "15 pers. max",
+    tarif: "220€",
     prerequis: "Aucun",
     formateur: "équipe Bouger les Lignes",
   },
 
   contenu: {
     objectif: {
-      title: "Objectifs pédagogiques :",
+      title: "Objectifs",
       list: [
         {
-          libelle: "Identifier les mécanismes du harcèlement et ses formes.",
-        },
-        {
-          libelle: "Déconstruire les représentations.",
-        },
-        {
-          libelle: "Responsabiliser témoins et acteurs.",
-        },
-        {
-          libelle: "Donner des outils concrets pour agir et signaler.",
+          libelle:
+            "Introduire les notions de respect, de limites et de consentement.",
         },
       ],
     },
     deroule: {
-      title: "Contenus et déroulés :",
+      title: "Contenus",
       list: [
         {
-          libelle: "Définition et exemples concrets.",
+          libelle: "Respect et intimité",
         },
         {
-          libelle: "Jeux.",
+          libelle: "Consentement et émotions",
         },
         {
-          libelle: "Débrief collectifs.",
+          libelle: "Différence conflit / violence",
         },
         {
-          libelle: "Présentation des dispositifs existants.",
+          libelle: "Identifier les situations inconfortables",
+        },
+        {
+          libelle: "Repérer les adultes ressources",
         },
       ],
     },
@@ -462,270 +470,38 @@ export const formation4 = {
       title: "Modalités et moyens pédagogiques :",
       list: [
         {
-          libelle: "Dynamique de groupe, discussions guidées, scénarios.",
+          libelle:
+            "Échange préalable avec la structure pour identifier les besoins",
         },
         {
-          libelle: "Sensibilisation réaliste et participative.",
+          libelle: "Intervention adaptée au public concerné",
         },
         {
-          libelle: "Favorise l’expression des jeunes.",
+          libelle: "Apports pédagogiques et exemples concrets",
+        },
+        {
+          libelle: "Réflexion collective et partage d’expériences",
+        },
+        {
+          libelle: "Repères pratiques pour agir",
+        },
+        {
+          libelle: "Préparation pédagogique et conception des contenus",
         },
       ],
     },
-    eval: {
-      title: "Évaluation des acquis:",
-      list: [
-        {
-          libelle: "Quiz et questionnaires.",
-        },
-        {
-          libelle: "Échanges sur la thématique des violences.",
-        },
-      ],
-    },
+    // eval: {
+    //   title: "Évaluation des acquis:",
+    //   list: [
+    //     {
+    //       libelle: "Quiz et questionnaires.",
+    //     },
+    //     {
+    //       libelle: "Échanges sur la thématique des violences.",
+    //     },
+    //   ],
+    // },
     info_sup: null,
-  },
-};
-export const formation5 = {
-  title: "Sensibilisation aux violences, au respect dans le sport",
-  resume: "Ce module aide les jeunes et les clubs à promouvoir le respect,",
-  info_spec:
-    "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
-  intro: {
-    public: "Jeunes, entraîneurs, parents, bénévoles",
-    duree: "1h à 3h30 (selon le niveau et le format)",
-    lieu: "Sur site",
-  },
-  info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur devis",
-    prerequis: "Aucun",
-    formateur: "Equipe Bouger les Lignes",
-  },
-
-  contenu: {
-    objectif: {
-      title: "Objectifs pédagogiques :",
-      list: [
-        {
-          libelle:
-            "Promouvoir une culture du respect, du consentement et de la responsabilité.",
-        },
-        {
-          libelle:
-            "Prévenir le harcèlement, les violences et les discriminations dans le cadre sportif.",
-        },
-        {
-          libelle:
-            "Sensibiliser à l’usage responsable des réseaux sociaux et à la prévention de la pornographie.",
-        },
-        {
-          libelle:
-            "Encourager la confiance, la fierté de soi et les comportements bienveillants, sur et en dehors du terrain.",
-        },
-      ],
-    },
-    deroule: {
-      title: "Contenus et déroulés:",
-      list: [
-        {
-          libelle:
-            "Mises en situation sportives (vestiaires, compétition, réseaux, etc.).",
-        },
-        {
-          libelle:
-            "Discussions sur le corps, la performance, les différences et les relations.",
-        },
-        {
-          libelle:
-            "Repères légaux et ressources locales pour les jeunes et les encadrant·es.",
-        },
-      ],
-    },
-    modalite: {
-      title: "Modalités et moyens pédagogiques:",
-      list: [
-        {
-          libelle:
-            "Approche ludique, participative et ancrée dans le quotidien des clubs.",
-        },
-      ],
-    },
-    eval: {
-      title: "Évaluation des acquis:",
-      list: [
-        {
-          libelle: "Quiz, échanges collectifs et retours d’expérience.",
-        },
-      ],
-    },
-    info_sup: null,
-  },
-};
-export const formation6 = {
-  title:
-    "Sensibilisation au développement du corps et au respect (milieu scolaire)",
-  resume:
-    "Ce module aide les jeunes à connaître leur corps, écouter leurs émotions et respecter les autres.",
-  info_spec:
-    "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
-  intro: {
-    public: "Elèves, équipes éducative ou groupes mixtes)",
-    duree: "1h à 3h30 (selon le module)",
-    lieu: "Sur site",
-  },
-  info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur devis",
-    prerequis: "Aucun",
-    formateur: "Equipe Bouger les Lignes",
-  },
-
-  contenu: {
-    objectif: {
-      title: "Objectifs pédagogiques :",
-      list: [
-        {
-          libelle:
-            "Favoriser la connaissance du corps et développer des repères simples sur l’anatomie.",
-        },
-        {
-          libelle:
-            "Sensibiliser à l’écoute de ses émotions, besoins et limites, et notion de consentement.",
-        },
-        {
-          libelle:
-            "Prévenir les violences sexuelles et le harcèlement par l’éducation au respect.",
-        },
-      ],
-    },
-    deroule: {
-      title: "Contenus et déroulés :",
-      list: [
-        {
-          libelle:
-            "Jeux et activités ludiques autour du corps, des émotions et du respect.",
-        },
-        {
-          libelle: "Discussions collectives.",
-        },
-        {
-          libelle:
-            "Vocabulaire du corps et repères sur les limites physiques et psychiques.",
-        },
-        {
-          libelle:
-            "Approches bienveillantes sur l’image de soi, l’estime et la relation à l’autre.",
-        },
-      ],
-    },
-    modalite: {
-      title: "Modalités et moyens pédagogiques :",
-      list: [
-        {
-          libelle: "Approche participative, créative et sécurisante.",
-        },
-        {
-          libelle:
-            "Alternance entre apports simples, expression libre et outils visuels.",
-        },
-        {
-          libelle:
-            "Adaptation du contenu selon les âges et les besoins spécifiques.",
-        },
-      ],
-    },
-    eval: {
-      title: "Évaluation des acquis:",
-      list: [
-        {
-          libelle:
-            "Échanges collectifs, retours spontanés, auto-évaluation du ressenti.",
-        },
-      ],
-    },
-    info_sup: null,
-  },
-};
-export const formation7 = {
-  title: "Sensibilisation globale (atelier mixte à choisir)",
-  resume:
-    "Atelier transversal qui aborde plusieurs formes de violences (du catalogue) pour favoriser une compréhension globale et une culture du respect.",
-  info_spec:
-    "*Accueil de personnes en situation de handicap: Les formations se déroulent dans des locaux accessibles aux personnes à mobilité réduite. Pour tout besoin d’adaptation, merci de prévenir 15 jours avant le début de la session afin d’organiser les modalités de compensation nécessaires.",
-  intro: {
-    public: "Tout public",
-    duree: "1h à 3h30 (selon le module)",
-    lieu: "Sur site",
-  },
-  info_sup: {
-    nbr_participant: "6 à 15 participant.es.",
-    tarif: "Sur devis",
-    prerequis: "Aucun",
-    formateur: "équipe Bouger les Lignes",
-  },
-
-  contenu: {
-    objectif: {
-      title: "Objectifs pédagogiques :",
-      list: [
-        {
-          libelle: "Aborder plusieurs thématiques de manière transversale.",
-        },
-        {
-          libelle: "Créer un climat de confiance et de dialogue.",
-        },
-        {
-          libelle: "Favoriser la prise de conscience globale.",
-        },
-      ],
-    },
-    deroule: {
-      title: "Contenus et déroulés :",
-      list: [
-        {
-          libelle: "Discussion collective.",
-        },
-        {
-          libelle: "Approche ludique (jeux).",
-        },
-        {
-          libelle: "Repères légaux et pratiques synthétiques.",
-        },
-      ],
-    },
-    modalite: {
-      title: "Modalités et moyens pédagogiques :",
-      list: [
-        {
-          libelle: "Apports théoriques.",
-        },
-        {
-          libelle: "Cas pratiques.",
-        },
-        {
-          libelle: "Débats.",
-        },
-        {
-          libelle:
-            "Mention «auteur» : sanctions et procédures sportives/légales.",
-        },
-        {
-          libelle: "Ludique, participative et inclusive.",
-        },
-      ],
-    },
-    eval: {
-      title: "Évaluation des acquis :",
-      list: [
-        {
-          libelle:
-            "Échanges collectifs, retours spontanés, auto-évaluation du ressenti.",
-        },
-      ],
-    },
-
-    info_sup: "Ce module est modulable selon le public et la durée souhaitée.",
   },
 };
 

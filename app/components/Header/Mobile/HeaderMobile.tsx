@@ -25,20 +25,24 @@ export const navigation = [
 ];
 export const subNav = [
   {
-    title: "",
-    url: "",
+    title: "Capitole | Session structurée",
+    url: "/services/capitole/session-structuree",
+    isExternal: false,
   },
   {
-    title: "",
-    url: "",
+    title: "Saint-Sernin | Journée pédagogique",
+    url: "/services/sernin/journee-pedagogique",
+    isExternal: false,
   },
   {
-    title: "",
-    url: "",
+    title: "Carmes | Sensibilisation des jeunes",
+    url: "/services/carmes/sensibilisation-des-jeunes",
+    isExternal: false,
   },
   {
-    title: "",
-    url: "",
+    title: "Esquirol | Sensibilisation enfants",
+    url: "/services/esquirol/sensibilisation-enfants",
+    isExternal: false,
   },
 ];
 
@@ -151,9 +155,9 @@ export default function HeaderMobile() {
                 Retour
               </button>
             </li>
-            {navigation.map((i, index) => {
+            {subNav.map((i, index) => {
               return (
-                <li key={index} className="text-center">
+                <li key={index} className="">
                   <a href={i.url}>{i.title}</a>
                   <hr className="border-primary-grey border-0.5 mt-6" />
                 </li>
