@@ -13,39 +13,23 @@ export default function HeaderDesktop() {
       isExternal: false,
       subNav: [
         {
-          title: "Sensibilisation au consentement et respect du corps",
-          url: "/services/1/sensibilisation-au-consentement-et-respect-du-corps",
+          title: "Capitole | Session structurée",
+          url: "/services/capitole/session-structuree",
           isExternal: false,
         },
         {
-          title: "Sensibilisation aux violences conjugales et familiales",
-          url: "/services/2/sensibilisation-aux-violences-conjugales-et-familiales",
+          title: "Saint-Sernin | Journée pédagogique",
+          url: "/services/sernin/journee-pedagogique",
           isExternal: false,
         },
         {
-          title: "Sensibilisation aux violences sexuelles",
-          url: "/services/3/sensibilisation-aux-violences-sexuelles",
+          title: "Carmes | Sensibilisation des jeunes",
+          url: "/services/carmes/sensibilisation-des-jeunes",
           isExternal: false,
         },
         {
-          title: "Sensibilisation au harcèlement scolaire",
-          url: "/services/4/sensibilisation-au-harcelement-scolaire",
-          isExternal: false,
-        },
-        {
-          title: "Sensibilisation aux violences, au respect dans le sport",
-          url: "/services/5/sensibilisation-aux-violence-au-respect-dans-le-sport",
-          isExternal: false,
-        },
-        {
-          title:
-            "Sensibilisation au développement du corps et au respect (milieu scolaire)",
-          url: "/services/6/sensibilisation-au-developpement-du-corps-et-au-respect-milieu-scolaire",
-          isExternal: false,
-        },
-        {
-          title: "Sensibilisation globale",
-          url: "/services/7/sensibilisation-globale",
+          title: "Esquirol | Sensibilisation enfants",
+          url: "/services/esquirol/sensibilisation-enfants",
           isExternal: false,
         },
       ],

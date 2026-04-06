@@ -1,5 +1,5 @@
 import Intro from "~/components/Intro";
-import { formation4 } from "~/contents/text";
+import { formation1 } from "~/contents/text";
 import imgIntro from "app/assets/media/pages/services/intro_services.jpg";
 import Card from "~/components/Card";
 import InformationPanel from "~/components/InformationPanel";
@@ -11,60 +11,60 @@ export default function Service1() {
         <Intro
           media={imgIntro}
           altDescription="image"
-          title={formation4.title}
-          detail={formation4.intro}
+          title={formation1.title}
+          detail={formation1.intro}
         />
 
         <div className="flex flex-col gap-3 lg:flex-row">
           <div className="flex flex-col gap-9 px-6 md:w-3/4">
-            <div className="font-semibold">{formation4.resume}</div>
+            <div className="font-semibold">{formation1.resume}</div>
             <section>
               <h2 className="text-secondary-blue mb-6">
-                {formation4.contenu.objectif.title}
+                {formation1.contenu.objectif.title}
               </h2>
 
               <ul className="list-disc px-3 md:px-9">
-                {formation4.contenu.objectif.list.map((item, index) => (
+                {formation1.contenu.objectif.list.map((item, index) => (
                   <li key={index}>{item.libelle}</li>
                 ))}
               </ul>
             </section>
             <section>
               <h2 className="text-secondary-blue mb-6">
-                {formation4.contenu.deroule.title}
+                {formation1.contenu.deroule.title}
               </h2>
 
               <ul className="list-disc px-3 md:px-9">
-                {formation4.contenu.deroule.list.map((item, index) => (
+                {formation1.contenu.deroule.list.map((item, index) => (
                   <li key={index}>{item.libelle}</li>
                 ))}
               </ul>
             </section>
             <section>
               <h2 className="text-secondary-blue mb-6">
-                {formation4.contenu.modalite.title}
+                {formation1.contenu.modalite.title}
               </h2>
 
               <ul className="list-disc px-3 md:px-9">
-                {formation4.contenu.modalite.list.map((item, index) => (
+                {formation1.contenu.modalite.list.map((item, index) => (
                   <li key={index}>{item.libelle}</li>
                 ))}
               </ul>
             </section>
             <section>
               <h2 className="text-secondary-blue mb-6">
-                {formation4.contenu.eval.title}
+                {formation1.contenu.eval.title}
               </h2>
 
               <ul className="list-disc px-3 md:px-9">
-                {formation4.contenu.eval.list.map((item, index) => (
+                {formation1.contenu.eval.list.map((item, index) => (
                   <li key={index}>{item.libelle}</li>
                 ))}
               </ul>
             </section>
           </div>
           <div className="px-6 md:w-1/4">
-            <InformationPanel />
+            <InformationPanel info={formation1.info_sup} />
           </div>
         </div>
       </div>
@@ -83,7 +83,7 @@ export default function Service1() {
 export const meta = () => {
   return [
     {
-      title: `${formation4.title} | Bouger les Lignes B2L`,
+      title: `${formation1.title} | Bouger les Lignes B2L`,
     },
     {
       description:
