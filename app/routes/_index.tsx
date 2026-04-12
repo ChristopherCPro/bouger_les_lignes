@@ -6,30 +6,37 @@ import Button from "~/components/ui/Button/Button";
 import MediaText from "~/components/MediaText";
 import media1 from "app/assets/media/components/card/services/img_service-1.png";
 import media2 from "app/assets/media/partenaires/toulouse-olympique.png";
+import Text from "~/components/Text";
+import { index } from "~/contents/text";
 
 export default function Home() {
   const cardService = [
     {
       type: "Service" as TypeCards,
       title: "Capitole",
-      description: "Petit descriptif a développer",
+      description:
+        "Session structurée  | 3h30 <br/>Une intervention pour clarifier les repères essentiels (respect, consentement, limites), comprendre les mécanismes des violences et adopter une posture adaptée face aux situations sensibles.Format destiné aux professionnels souhaitant renforcer leurs pratiques, avec des apports concrets, des repères clairs et des outils directement mobilisables.",
+      to: "/services/capitole/session-structuree",
     },
     {
       type: "Service" as TypeCards,
       title: "Saint-Sernin",
-      description: "Petit descriptif a développer",
+      description:
+        "Journée pédagogique | 7h <br/> Une journée pour mieux comprendre les mécanismes des violences, analyser des situations concrètes et ajuster les pratiques professionnelles.Un format qui permet aux équipes de prendre du recul, d’échanger et de renforcer une posture commune face aux situations de terrain.",
       to: "services/sernin/journee-pedagogique",
     },
     {
       type: "Service" as TypeCards,
       title: "Carmes",
-      description: "Petit descriptif a développer",
+      description:
+        "Sensibilisation des jeunes | 1h30 <br/> Une intervention adaptée aux adolescents pour comprendre les violences, leurs mécanismes et leurs impacts, et encourager une réflexion sur les relations, le respect et le consentement. Un format dynamique qui aborde les réalités des jeunes (pression sociale, cyberharcèlement, violences sexuelles) et favorise l’expression et la prise de conscience.",
       to: "services/carmes/sensibilisation-des-jeunes",
     },
     {
       type: "Service" as TypeCards,
       title: "Esquirol",
-      description: "Petit descriptif a développer",
+      description:
+        "Sensibilisation enfants | 1h  <br/>Une première sensibilisation pour introduire les notions de respect, de limites et de consentement auprès des enfants.Un format adapté au primaire, ludique et accessible, pour aider à identifier les situations inconfortables, comprendre ses émotions et repérer les adultes ressources.",
       to: "services/esquirol/sensibilisation-enfants",
     },
   ];
@@ -106,15 +113,7 @@ export default function Home() {
             l’effet colibri. (Les formations sont payantes sur devis.)"
         />
 
-        <Card
-          type="CallToDonation"
-          title="Devenez acteur, soutenez nous !"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-            eveniet, quos iure eligendi dolores voluptatum nobis eos saepe,
-            ducimus laboriosam nihil sapiente porro repellendus libero minus,
-            repudiandae sequi aut perferendis! Iusto architecto incidunt
-            corporis delectus."
-        />
+        <Card type="CallToDonation" title="Devenez acteur, soutenez nous !" />
       </div>
 
       <div className="bg-gray-100 py-14">
@@ -127,7 +126,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-9">
+      <div className="">
+        <div className="container mx-auto">
+          <h3 className="intertitre">{index.title}</h3>
+
+          <Text description={index.paragraph} fullWidth />
+        </div>
+      </div>
+
+      <div className="bg-gray-100 py-9">
         <div className="container m-auto">
           <h3 className="intertitre">Nos dernières actus</h3>
           <div className="flex flex-col justify-center gap-9 pt-9">

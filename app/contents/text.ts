@@ -4,6 +4,18 @@ import member2 from "app/assets/media/pages/propos/img_member-2.png";
 import member3 from "app/assets/media/pages/propos/img_member-3.png";
 import member4 from "app/assets/media/pages/propos/img_member-4.png";
 
+export const index = {
+  title: "Des interventions sur mesure : ",
+  paragraph: [
+    {
+      desc: "Toutes nos formations et actions de sensibilisation sont construites sur mesure, en fonction de vos besoins, de votre public et de votre contexte (école, club sportif, entreprise, association…). Les interventions sont proposées sur devis et incluent la préparation, l’animation et l’adaptation pédagogique.",
+    },
+    {
+      desc: "<p>Bouger les Lignes B2L est une association toulousaine engagée dans la prévention et la sensibilisation aux violences intra et extra familiales.</p> Nous intervenons auprès de tous les publics pour informer, sensibiliser et former autour des enjeux de violences, de consentement, de respect et d’émotions. Une question, une demande d’intervention ou un projet de partenariat ?<br/> Nous sommes à votre écoute pour échanger et construire une action adaptée à votre réalité.",
+    },
+  ],
+};
+
 export const aPropos = {
   mainTitle: "A propos de Bouger les Lignes B2L",
   intro: [
@@ -129,31 +141,31 @@ export const serviceIndex = {
   cardService: [
     {
       type: "Service" as TypeCards,
-      title: "Service",
+      title: "Capitole",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+        "Session structurée  | 3h30 <br/>Une intervention pour clarifier les repères essentiels (respect, consentement, limites), comprendre les mécanismes des violences et adopter une posture adaptée face aux situations sensibles.Format destiné aux professionnels souhaitant renforcer leurs pratiques, avec des apports concrets, des repères clairs et des outils directement mobilisables.",
+      to: "/services/capitole/session-structuree",
     },
     {
       type: "Service" as TypeCards,
-      title: "Service 2",
+      title: "Saint-Sernin",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+        "Journée pédagogique | 7h <br/> Une journée pour mieux comprendre les mécanismes des violences, analyser des situations concrètes et ajuster les pratiques professionnelles.Un format qui permet aux équipes de prendre du recul, d’échanger et de renforcer une posture commune face aux situations de terrain.",
+      to: "services/sernin/journee-pedagogique",
     },
     {
       type: "Service" as TypeCards,
-      title: "Service 3",
+      title: "Carmes",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+        "Sensibilisation des jeunes | 1h30 <br/> Une intervention adaptée aux adolescents pour comprendre les violences, leurs mécanismes et leurs impacts, et encourager une réflexion sur les relations, le respect et le consentement. Un format dynamique qui aborde les réalités des jeunes (pression sociale, cyberharcèlement, violences sexuelles) et favorise l’expression et la prise de conscience.",
+      to: "services/carmes/sensibilisation-des-jeunes",
     },
     {
       type: "Service" as TypeCards,
-      title: "Service 4",
+      title: "Esquirol",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing eli Cupiditate reprehenderit accusantium quas, omnis doloremque beatae saepe  blanditiis quasi maiores repellat!",
-      to: "/",
+        "Sensibilisation enfants | 1h  <br/>Une première sensibilisation pour introduire les notions de respect, de limites et de consentement auprès des enfants.Un format adapté au primaire, ludique et accessible, pour aider à identifier les situations inconfortables, comprendre ses émotions et repérer les adultes ressources.",
+      to: "services/esquirol/sensibilisation-enfants",
     },
   ],
 };
@@ -258,7 +270,7 @@ export const formation2 = {
   info_sup: {
     nbr_participant:
       "15 pers. max : équipes professionnelles, structures éducatives, associations, clubs sportifs, collectivités, entreprises",
-    tarif: "1200€",
+    tarif: "À partir de 1200€",
     prerequis: "Aucun",
     formateur: "Equipe Bouger les Lignes",
   },
@@ -510,7 +522,7 @@ export const contact = {
     {
       paragraph: [
         {
-          desc: "Mauris viverra metus in augue rutrum tristique. Nulla rhoncus nunc rhoncus enim vulputate, gravida bibendum sapien maximus. Donec mollis tortor sed leo mollis, a posuere massa euismod. Donec hendrerit eu dui a accumsan. Fusce cursus neque vel quam posuere",
+          desc: "<p>Soutenez une action de prévention concrète: Bouger les Lignes B2L est une association engagée dans la prévention et la sensibilisation aux violences intra et extra familiales.</p><p> À travers nos interventions, nous accompagnons les professionnels, les jeunes et les adultes pour mieux comprendre les violences, renforcer les repères et favoriser des environnements plus respectueux et sécurisants.</p> <p>Soutenir l’association, c’est contribuer à développer des actions de terrain et à rendre la prévention accessible au plus grand nombre.</p>",
         },
       ],
     },

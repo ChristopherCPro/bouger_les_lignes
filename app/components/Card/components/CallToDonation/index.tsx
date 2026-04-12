@@ -13,12 +13,29 @@ export default function CallToDonation({ title, description, to }: CardProps) {
 
   return (
     <div
-      className="bg-primary-orange m-auto w-3/4 rounded-3xl px-1 py-12 text-white md:px-9"
+      className="bg-primary-orange m-auto w-3/4 rounded-3xl p-4 py-12 text-white md:px-9"
       style={backgroundStyle}>
       <div className="flex flex-col items-center gap-9 md:flex-row">
-        <div className="w-full text-center md:w-1/2">
+        <div className="flex w-full flex-col gap-3 text-justify md:w-1/2">
           <h3 className="intertitre">{title}</h3>
-          <p>{description}</p>
+          <p>
+            Soutenir Bouger les Lignes B2L, c’est agir concrètement pour
+            prévenir les violences, sensibiliser les enfants, les jeunes et les
+            adultes, et faire évoluer les mentalités.
+          </p>
+          <p>
+            Vous pouvez vous engager à nos côtés :
+            <ul className="list-disc ps-8">
+              <li>en devenant adhérent,</li>
+              <li>en faisant un don,</li>
+              <li>en relayant nos actions.</li>
+            </ul>
+          </p>
+
+          <p>
+            Chaque contribution participe à faire grandir une société plus
+            respectueuse, consciente et engagée.
+          </p>
         </div>
         <Button
           to="https://www.helloasso.com/associations/bouger-les-lignes-toulouse/adhesions/adhesion"
