@@ -92,6 +92,10 @@ export default function FormContact() {
             Envoyer le message
           </button>
         </div>
+        <p className="text-sm text-white">
+          Les informations collectées sont uniquement utilisées pour vous
+          répondre. Elles ne sont ni partagées, ni revendues.
+        </p>
       </Form>
     </div>
   );

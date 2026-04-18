@@ -39,9 +39,13 @@ export default function FooterDesktop() {
         <div className="w-1/3">
           <h3>Nous contacter</h3>
           <p className="mb-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            sunt eveniet assumenda quasi quam, dolor quisquam at ducimus
-            consequatur.
+            Une question, une demande d’intervention, un besoin de
+            sensibilisation ou un projet de partenariat ? L’équipe de Bouger les
+            Lignes B2L est à votre écoute pour échanger avec vous et construire
+            une action adaptée à votre structure, votre public et vos enjeux.
+            Nos interventions sont réalisées sur devis, en fonction de vos
+            besoins, du nombre de participants et du format choisi
+            (sensibilisation, formation, intervention sur mesure).
           </p>
           <Button
             to="/contact"

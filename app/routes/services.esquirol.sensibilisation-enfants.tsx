@@ -53,32 +53,13 @@ export default function Service1() {
                 ))}
               </ul>
             </section>
-            <section>
-              <h2 className="text-secondary-blue mb-6">
-                {formation4.contenu.eval?.title}
-              </h2>
-
-              <ul className="list-disc px-3 md:px-9">
-                {formation4.contenu.eval?.list?.map((item, index) => (
-                  <li key={index}>{item.libelle}</li>
-                ))}
-              </ul>
-            </section>
           </div>
           <div className="px-6 md:w-1/4">
             <InformationPanel info={formation4.info_sup} />
           </div>
         </div>
       </div>
-      <Card
-        type="CallToDonation"
-        title="Devenez acteur, soutenez nous !"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-                  eveniet, quos iure eligendi dolores voluptatum nobis eos saepe,
-                  ducimus laboriosam nihil sapiente porro repellendus libero minus,
-                  repudiandae sequi aut perferendis! Iusto architecto incidunt
-                  corporis delectus."
-      />
+      <Card type="CallToDonation" title="Devenez acteur, soutenez nous !" />
     </div>
   );
 }

@@ -69,8 +69,7 @@ export default function Contact() {
                   type="Icon"
                   icon="map"
                   title="Adresse"
-                  description={`3 rue test
-                  31000 Toulouse`}
+                  description={`Toulouse | interventions en Haute-Garonne, en Occitanie, en France`}
                 />
               </div>
             </div>

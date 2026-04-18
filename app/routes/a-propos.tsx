@@ -56,15 +56,7 @@ export default function PageAPropos() {
       </div>
 
       <div className="container m-auto">
-        <Card
-          type="CallToDonation"
-          title="Devenez acteur, soutenez nous !"
-          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-                    eveniet, quos iure eligendi dolores voluptatum nobis eos saepe,
-                    ducimus laboriosam nihil sapiente porro repellendus libero minus,
-                    repudiandae sequi aut perferendis! Iusto architecto incidunt
-                    corporis delectus."
-        />
+        <Card type="CallToDonation" title="Devenez acteur, soutenez nous !" />
       </div>
     </div>
   );
