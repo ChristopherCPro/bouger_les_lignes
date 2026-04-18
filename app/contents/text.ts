@@ -184,9 +184,11 @@ export const formation1 = {
   info_sup: {
     nbr_participant:
       "15 pers. max : équipes professionnelles, structures éducatives, associations, clubs sportifs, collectivités, entreprises",
-    tarif: "À partir de 600€",
+    tarif: "À partir de 600€ *",
     prerequis: "Aucun",
     formateur: "Equipe Bouger les Lignes",
+    info_cplt:
+      "Frais de déplacement en sus  Ajustement possible selon les besoins et le nombre de groupes",
   },
 
   contenu: {
@@ -243,18 +245,6 @@ export const formation1 = {
         },
       ],
     },
-    eval: {
-      title: "Évaluation des acquis :",
-      list: [
-        {
-          libelle: "Quiz et questionnaires.",
-        },
-        {
-          libelle: "Échanges sur la thématique des violences.",
-        },
-      ],
-    },
-    info_sup: null,
   },
 };
 export const formation2 = {
@@ -270,9 +260,11 @@ export const formation2 = {
   info_sup: {
     nbr_participant:
       "15 pers. max : équipes professionnelles, structures éducatives, associations, clubs sportifs, collectivités, entreprises",
-    tarif: "À partir de 1200€",
+    tarif: "À partir de 1200€ *",
     prerequis: "Aucun",
     formateur: "Equipe Bouger les Lignes",
+    info_cplt:
+      "Frais de déplacement en sus  Ajustement possible selon les besoins et le nombre de groupes",
   },
 
   contenu: {
@@ -332,18 +324,6 @@ export const formation2 = {
         },
       ],
     },
-    eval: {
-      title: "Évaluation des acquis :",
-      list: [
-        {
-          libelle: "Quiz et questionnaires.",
-        },
-        {
-          libelle: "Échanges sur la thématique des violences.",
-        },
-      ],
-    },
-    info_sup: null,
   },
 };
 export const formation3 = {
@@ -358,9 +338,11 @@ export const formation3 = {
   },
   info_sup: {
     nbr_participant: "15 pers. max",
-    tarif: "300€",
+    tarif: "300€ * ",
     prerequis: "Aucun",
     formateur: "Équipe Bouger les Lignes",
+    info_cplt:
+      "Frais de déplacement en sus  Ajustement possible selon les besoins et le nombre de groupes",
   },
 
   contenu: {
@@ -417,17 +399,7 @@ export const formation3 = {
         },
       ],
     },
-    eval: {
-      title: "Évaluation des acquis :",
-      list: [
-        {
-          libelle: "Quiz et questionnaires.",
-        },
-        {
-          libelle: "Échanges sur la thématique des violences.",
-        },
-      ],
-    },
+
     info_sup: null,
   },
 };
@@ -443,9 +415,11 @@ export const formation4 = {
   },
   info_sup: {
     nbr_participant: "15 pers. max",
-    tarif: "220€",
+    tarif: "220€ *",
     prerequis: "Aucun",
     formateur: "équipe Bouger les Lignes",
+    info_cplt:
+      "Frais de déplacement en sus  Ajustement possible selon les besoins et le nombre de groupes",
   },
 
   contenu: {
@@ -502,17 +476,6 @@ export const formation4 = {
         },
       ],
     },
-    // eval: {
-    //   title: "Évaluation des acquis:",
-    //   list: [
-    //     {
-    //       libelle: "Quiz et questionnaires.",
-    //     },
-    //     {
-    //       libelle: "Échanges sur la thématique des violences.",
-    //     },
-    //   ],
-    // },
     info_sup: null,
   },
 };

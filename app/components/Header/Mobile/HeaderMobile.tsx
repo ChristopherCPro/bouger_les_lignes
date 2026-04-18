@@ -25,23 +25,28 @@ export const navigation = [
 ];
 export const subNav = [
   {
+    title: "Présentation",
+    url: "/actions",
+    isExternal: false,
+  },
+  {
     title: "Capitole | Session structurée",
-    url: "/services/capitole/session-structuree",
+    url: "/actions/capitole/session-structuree",
     isExternal: false,
   },
   {
     title: "Saint-Sernin | Journée pédagogique",
-    url: "/services/sernin/journee-pedagogique",
+    url: "/actions/sernin/journee-pedagogique",
     isExternal: false,
   },
   {
     title: "Carmes | Sensibilisation des jeunes",
-    url: "/services/carmes/sensibilisation-des-jeunes",
+    url: "/actions/carmes/sensibilisation-des-jeunes",
     isExternal: false,
   },
   {
     title: "Esquirol | Sensibilisation enfants",
-    url: "/services/esquirol/sensibilisation-enfants",
+    url: "/actions/esquirol/sensibilisation-enfants",
     isExternal: false,
   },
 ];
@@ -108,7 +113,7 @@ export default function HeaderMobile() {
           <ul className="flex w-3/4 list-none flex-col gap-6">
             <li className="text-center">
               <button onClick={handleSubMenu} className="relative w-full gap-4">
-                Services
+                Nos actions
                 <Icon name="chevronRight" className="absolute top-0 right-0" />
               </button>
               <hr className="border-primary-grey border-0.5 mt-6" />

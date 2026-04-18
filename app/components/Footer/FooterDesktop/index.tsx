@@ -30,10 +30,12 @@ export default function FooterDesktop() {
         <div className="w-1/3">
           <h3>Lorem Ipsum</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            sunt eveniet assumenda quasi quam, dolor quisquam at ducimus
-            consequatur et soluta hic error optio odio? Tempore at illo optio!
-            Placeat.
+            B2L intervient à Toulouse, en Haute-Garonne et en Occitanie pour des
+            actions de sensibilisation, de prévention et de formation autour des
+            violences intra et extra familiales.Une question, une demande
+            d’intervention ou un projet de partenariat ? Nous sommes à votre
+            écoute pour échanger et construire une action adaptée à votre
+            structure et à vos besoins
           </p>
         </div>
         <div className="w-1/3">

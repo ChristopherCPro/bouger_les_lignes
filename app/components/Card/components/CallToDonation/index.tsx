@@ -23,14 +23,14 @@ export default function CallToDonation({ title, description, to }: CardProps) {
             prévenir les violences, sensibiliser les enfants, les jeunes et les
             adultes, et faire évoluer les mentalités.
           </p>
-          <p>
+          <span>
             Vous pouvez vous engager à nos côtés :
             <ul className="list-disc ps-8">
               <li>en devenant adhérent,</li>
               <li>en faisant un don,</li>
               <li>en relayant nos actions.</li>
             </ul>
-          </p>
+          </span>
 
           <p>
             Chaque contribution participe à faire grandir une société plus
