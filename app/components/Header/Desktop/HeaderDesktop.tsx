@@ -8,28 +8,28 @@ export default function HeaderDesktop() {
 
   const navigation: NavigationTypes[] = [
     {
-      title: "Nos Services",
-      url: "/services",
+      title: "Nos actions",
+      url: "/actions",
       isExternal: false,
       subNav: [
         {
           title: "Capitole | Session structurée",
-          url: "/services/capitole/session-structuree",
+          url: "/actions/capitole/session-structuree",
           isExternal: false,
         },
         {
           title: "Saint-Sernin | Journée pédagogique",
-          url: "/services/sernin/journee-pedagogique",
+          url: "/actions/sernin/journee-pedagogique",
           isExternal: false,
         },
         {
           title: "Carmes | Sensibilisation des jeunes",
-          url: "/services/carmes/sensibilisation-des-jeunes",
+          url: "/actions/carmes/sensibilisation-des-jeunes",
           isExternal: false,
         },
         {
           title: "Esquirol | Sensibilisation enfants",
-          url: "/services/esquirol/sensibilisation-enfants",
+          url: "/actions/esquirol/sensibilisation-enfants",
           isExternal: false,
         },
       ],
@@ -39,7 +39,7 @@ export default function HeaderDesktop() {
     { title: "FAQ", url: "/foire-aux-questions", isExternal: false },
     { title: "Contact", url: "/contact", isExternal: false },
     {
-      title: "Faire un don",
+      title: "Adhérer/faire un don",
       url: "https://www.helloasso.com/associations/bouger-les-lignes-toulouse/adhesions/adhesion",
       isExternal: true,
     },

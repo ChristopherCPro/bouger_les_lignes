@@ -7,10 +7,12 @@ interface infoType {
     tarif: string;
     prerequis: string;
     formateur: string;
+    info_cplt: string;
   };
 }
 
 export default function InformationPanel(info: infoType) {
+  console.log(info);
   return (
     <div className="flex flex-col gap-9">
       <div className="border-tertiary-blue flex min-h-44 flex-col gap-6 rounded-lg border border-t-15 p-5">
@@ -30,6 +32,7 @@ export default function InformationPanel(info: infoType) {
           <span className="font-semibold">Formateur.rice.s : </span>{" "}
           {info.info.formateur}
         </p>
+        <p className="text-xs">* {info.info.info_cplt}</p>
       </div>
 
       <Button

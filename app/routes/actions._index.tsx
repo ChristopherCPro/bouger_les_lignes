@@ -5,7 +5,7 @@ import { serviceIndex } from "~/contents/text";
 import background from "~/assets/media/pages/services/bg_middle-1.jpg";
 import Cards from "~/components/Cards";
 
-export default function ServiceIndex() {
+export default function ActionIndex() {
   return (
     <div className="flex flex-col gap-9 pt-9">
       <div className="container m-auto flex flex-col gap-9">
