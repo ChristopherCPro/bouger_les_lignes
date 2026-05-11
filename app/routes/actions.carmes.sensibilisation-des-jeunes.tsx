@@ -9,10 +9,11 @@ export default function Carmes() {
     <div className="flex flex-col gap-9 py-9">
       <div className="container m-auto flex flex-col gap-9">
         <Intro
-          media={imgIntro}
+          media="/media/services/carmes.webp"
           altDescription="image"
           title={formation3.title}
           detail={formation3.intro}
+          icon="carmes"
         />
 
         <div className="flex flex-col gap-3 lg:flex-row">

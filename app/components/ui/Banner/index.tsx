@@ -1,13 +1,34 @@
-import background from "~/assets/media/bannerIndex.jpg";
 import Button from "../Button/Button";
+import { motion, useScroll, useTransform } from "motion/react";
+import { useRef } from "react";
 
 export default function Banner() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
+  const blur = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["blur(0px)", "blur(12px)"],
+  );
+
   return (
     <div className="flex flex-col">
       <div
-        className="flex h-[75vh] items-center bg-cover bg-fixed bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${background})` }}>
-        <div className="flex h-1/2 w-full items-center bg-black/45 backdrop-blur-xs md:h-full md:w-1/2">
+        ref={ref}
+        className="relative flex h-[75vh] items-center overflow-hidden">
+        <motion.div
+          className="absolute inset-0 bg-cover bg-fixed bg-center bg-no-repeat"
+          style={{
+            scale,
+            filter: blur,
+            backgroundImage: `url("/media/index/bannerIndex.webp")`,
+          }}
+        />
+        <div className="relative flex h-1/2 w-full items-center bg-black/45 backdrop-blur-xs md:h-full md:w-1/2">
           <div className="mx-auto text-center text-white">
             <h1>
               <span className="mb-4 block">Agir - Comprendre - Prévenir</span>

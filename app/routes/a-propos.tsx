@@ -12,10 +12,13 @@ export default function PageAPropos() {
   return (
     <div className="flex flex-col gap-9 py-9">
       <div className="container m-auto flex flex-col gap-9">
-        <Intro media={imgIntro} title={aPropos.mainTitle} />
+        <Intro
+          media="/media/a-propos/img_asso-1.webp"
+          title={aPropos.mainTitle}
+        />
 
         {aPropos.intro.map((items, index) => (
-          <Text key="index" title={items.title} description={items.paragraph} />
+          <Text key={index} title={items.title} description={items.paragraph} />
         ))}
       </div>
 
@@ -47,10 +50,10 @@ export default function PageAPropos() {
       <div className="container m-auto px-9">
         <h2 className="intertitre">La marraine de l'association</h2>
         <MediaText
-          media={member5}
-          altDescription="Photo de CLOE CORREA, marraine de l'association et joueuse au Stade Toulousain"
-          title="CLOE CORREA - Marraine de l'association"
-          description="Description à venir"
+          media={aPropos.cloe.image}
+          altDescription={aPropos.cloe.alt}
+          title={aPropos.cloe.title}
+          description={aPropos.cloe.description}
           className="after:bg-tertiary-blue"
         />
       </div>

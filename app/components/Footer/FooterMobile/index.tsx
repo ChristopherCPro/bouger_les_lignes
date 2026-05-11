@@ -28,20 +28,26 @@ export default function FooterMobile() {
           </ul>
         </div>
         <div className="px-9">
-          <h3>Lorem Ipsum</h3>
+          <h3>Bouger les lignes</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            sunt eveniet assumenda quasi quam, dolor quisquam at ducimus
-            consequatur et soluta hic error optio odio? Tempore at illo optio!
-            Placeat.
+            B2L intervient à Toulouse, en Haute-Garonne et en Occitanie pour des
+            actions de sensibilisation, de prévention et de formation autour des
+            violences intra et extra familiales.Une question, une demande
+            d’intervention ou un projet de partenariat ? Nous sommes à votre
+            écoute pour échanger et construire une action adaptée à votre
+            structure et à vos besoins
           </p>
         </div>
         <div className="px-9">
           <h3>Nous contacter</h3>
-          <p className="mb-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            sunt eveniet assumenda quasi quam, dolor quisquam at ducimus
-            consequatur.
+          <p className="mb-3">
+            Une question, une demande d’intervention, un besoin de
+            sensibilisation ou un projet de partenariat ? L’équipe de Bouger les
+            Lignes B2L est à votre écoute pour échanger avec vous et construire
+            une action adaptée à votre structure, votre public et vos enjeux.
+            Nos interventions sont réalisées sur devis, en fonction de vos
+            besoins, du nombre de participants et du format choisi
+            (sensibilisation, formation, intervention sur mesure).
           </p>
           <Button
             to="/"

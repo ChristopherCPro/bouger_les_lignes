@@ -9,10 +9,11 @@ export default function StSernin() {
     <div className="flex flex-col gap-9 py-9">
       <div className="container m-auto flex flex-col gap-9">
         <Intro
-          media={imgIntro}
+          media="/media/services/saintsernin.webp"
           altDescription="image"
           title={formation2.title}
           detail={formation2.intro}
+          icon="sernin"
         />
 
         <div className="flex flex-col gap-3 lg:flex-row">
@@ -39,8 +40,8 @@ export default function StSernin() {
                   <div key={`morning-${index}`}>
                     <h4 className="text-tertiary-blue">{item.title}</h4>
                     <ul className="mb-9 list-disc px-3 md:px-9">
-                      {item.list_deroul.map((d) => (
-                        <li>{d.libelle}</li>
+                      {item.list_deroul.map((d, index) => (
+                        <li key={`list-morning-${index}`}>{d.libelle}</li>
                       ))}
                     </ul>
                   </div>
@@ -48,8 +49,8 @@ export default function StSernin() {
                   <div key={`afternoon-${index}`}>
                     <h4 className="text-tertiary-blue">{item.title}</h4>
                     <ul className="list-disc px-3 md:px-9">
-                      {item.list_deroul.map((d) => (
-                        <li>{d.libelle}</li>
+                      {item.list_deroul.map((d, index) => (
+                        <li key={`list-afternoon-${index}`}>{d.libelle}</li>
                       ))}
                     </ul>
                   </div>

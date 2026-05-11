@@ -10,6 +10,7 @@ interface ButtonProps {
   type?: "image" | "icon";
   icon?: IconName;
   externalLink?: boolean;
+  isDisabled?: boolean;
 }
 
 export default function Button({
@@ -20,6 +21,7 @@ export default function Button({
   type,
   icon,
   externalLink,
+  isDisabled,
 }: ButtonProps) {
   if (type === "image") {
     return (
@@ -53,6 +55,7 @@ export default function Button({
       href={to}
       className={cn(className, {
         "flex items-center gap-2": icon,
+        "pointer-events-none cursor-not-allowed opacity-50": isDisabled,
       })}
       target={externalLink ? "_blank" : undefined}
       rel="noopener noreferrer">

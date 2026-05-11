@@ -9,10 +9,11 @@ export default function Esquirol() {
     <div className="flex flex-col gap-9 py-9">
       <div className="container m-auto flex flex-col gap-9">
         <Intro
-          media={imgIntro}
+          media="/media/services/esquirol.webp"
           altDescription="image"
           title={formation4.title}
           detail={formation4.intro}
+          icon="esquirol"
         />
 
         <div className="flex flex-col gap-3 lg:flex-row">

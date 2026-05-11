@@ -1,12 +1,14 @@
 import type { Intro } from "~/types/formationProps";
 import { cn } from "~/utils/ui";
 import { Icon } from "../ui/Icon";
+import type { IconName } from "~/assets/icons";
 
 interface MediaProps {
   media?: string;
   altDescription?: string;
   title: string;
   detail?: Intro;
+  icon?: IconName;
 }
 
 export default function Intro({
@@ -14,23 +16,27 @@ export default function Intro({
   altDescription,
   title,
   detail,
+  icon,
 }: MediaProps) {
   return (
     <div
       className={cn(
         "m-auto mb-9 flex w-full flex-col gap-5 md:flex-row md:gap-0",
       )}>
-      <div className="h-90.5 md:w-1/2">
-        <img
-          loading="lazy"
-          src={media}
-          className="m-auto h-full w-11/12 rounded-lg object-cover object-top-left md:w-full md:rounded-2xl md:px-0"
-          alt={altDescription}
-        />
-      </div>
+      {media && (
+        <div className="h-90.5 md:w-1/2">
+          <img
+            loading="lazy"
+            src={media}
+            className="m-auto h-full w-11/12 rounded-lg object-cover object-top-left md:w-full md:rounded-2xl md:px-0"
+            alt={altDescription}
+          />
+        </div>
+      )}
       <div className="flex flex-col justify-between gap-6 md:w-1/2 md:gap-0">
-        <div className="flex h-full items-center justify-center ps-9">
+        <div className="flex h-full flex-col items-center justify-center gap-9 ps-9">
           <h1 className="">{title}</h1>
+          {icon && <Icon name={icon} className="size-28" />}
         </div>
         {detail && (
           <div className="flex justify-center gap-3 md:justify-end">
