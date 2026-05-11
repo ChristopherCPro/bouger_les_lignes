@@ -1,7 +1,6 @@
 import Intro from "~/components/Intro";
 import Text from "~/components/Text";
 import { serviceIndex } from "~/contents/text";
-import background from "~/assets/media/pages/services/bg_middle-1.jpg";
 import Cards from "~/components/Cards";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "motion/react";

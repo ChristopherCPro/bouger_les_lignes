@@ -4,7 +4,6 @@ import Card, { type CardProps, type TypeCards } from "~/components/Card";
 import Cards from "~/components/Cards";
 import Button from "~/components/ui/Button/Button";
 import MediaText from "~/components/MediaText";
-import media2 from "app/assets/media/partenaires/toulouse-olympique.png";
 import Text from "~/components/Text";
 import { index } from "~/contents/text";
 import { useLoaderData, type LoaderFunctionArgs } from "react-router";

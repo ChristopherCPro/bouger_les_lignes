@@ -1,6 +1,5 @@
 import Intro from "~/components/Intro";
 import { formation2 } from "~/contents/text";
-import imgIntro from "app/assets/media/pages/services/intro_services.jpg";
 import Card from "~/components/Card";
 import InformationPanel from "~/components/InformationPanel";
 

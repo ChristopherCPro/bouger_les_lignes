@@ -1,9 +1,5 @@
 import Intro from "~/components/Intro";
 import Text from "~/components/Text";
-import imgIntro from "app/assets/media/pages/propos/img_asso-1.webp";
-
-import member5 from "app/assets/media/pages/propos/img_member-5.png";
-
 import MediaText from "~/components/MediaText";
 import Card from "~/components/Card";
 import { aPropos } from "~/contents/text";
