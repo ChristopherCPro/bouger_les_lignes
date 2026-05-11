@@ -6,6 +6,7 @@ export interface NavigationTypes {
   title: string;
   url: string;
   isExternal: boolean;
+  isDisabled?: boolean;
   subNav?: {
     title: string;
     url: string;

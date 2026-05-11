@@ -3,16 +3,18 @@ import { formation1 } from "~/contents/text";
 import imgIntro from "app/assets/media/pages/services/intro_services.jpg";
 import Card from "~/components/Card";
 import InformationPanel from "~/components/InformationPanel";
+import { Icon } from "~/components/ui/Icon";
 
 export default function Capitole() {
   return (
     <div className="flex flex-col gap-9 py-9">
       <div className="container m-auto flex flex-col gap-9">
         <Intro
-          media={imgIntro}
+          media="/media/services/capitole.webp"
           altDescription="image"
           title={formation1.title}
           detail={formation1.intro}
+          icon="capitol"
         />
 
         <div className="flex flex-col gap-3 lg:flex-row">

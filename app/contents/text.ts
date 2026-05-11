@@ -1,9 +1,4 @@
 import type { TypeCards } from "~/components/Card";
-import member1 from "app/assets/media/pages/propos/img_member-1.png";
-import member2 from "app/assets/media/pages/propos/img_member-2.png";
-import member3 from "app/assets/media/pages/propos/img_member-3.png";
-import member4 from "app/assets/media/pages/propos/img_member-4.png";
-
 export const index = {
   title: "Des interventions sur mesure : ",
   paragraph: [
@@ -12,6 +7,38 @@ export const index = {
     },
     {
       desc: "<p>Bouger les Lignes B2L est une association toulousaine engagée dans la prévention et la sensibilisation aux violences intra et extra familiales.</p> Nous intervenons auprès de tous les publics pour informer, sensibiliser et former autour des enjeux de violences, de consentement, de respect et d’émotions. Une question, une demande d’intervention ou un projet de partenariat ?<br/> Nous sommes à votre écoute pour échanger et construire une action adaptée à votre réalité.",
+    },
+  ],
+
+  partenaire: [
+    {
+      type: "Media" as TypeCards,
+      image: "/media/partenaires/toulouse_13.webp",
+      isPartenaire: true,
+    },
+    {
+      type: "Media" as TypeCards,
+      image: "/media/partenaires/fondation_du_sport.webp",
+      to: " https://occitanie.territoiresdesport.fr/project/le-sport-comme-levier-de-prevention-des-violences-intra-et-extra-familiales-en-occitanie?utm_campaign=territoires-de-sport&utm_content=project_approved&utm_medium=email-auto&utm_source=kentaa",
+      isPartenaire: true,
+    },
+    {
+      type: "Media" as TypeCards,
+      image: "/media/partenaires/nenettes.webp",
+      isPartenaire: true,
+    },
+    {
+      type: "Media" as TypeCards,
+      image: "/media/partenaires/family_park.webp",
+      isPartenaire: true,
+    },
+  ],
+
+  donnateurs: [
+    {
+      type: "Media" as TypeCards,
+      image: "/media/donnateurs/cattier.webp",
+      isPartenaire: true,
     },
   ],
 };
@@ -47,34 +74,42 @@ export const aPropos = {
 
   member: [
     {
-      image: member3,
+      image: "/media/a-propos/img_member-3.webp",
       alt: "Photo du président de l'association, FRANCOIS CUNY",
       title: "FRANCOIS CUNY - Président",
       description:
         "Engagé de longue date dans la vie collective, François a présidé le Conseil des parents d’élèves du groupe scolaire Jolimont et a participé activement au collectif FCPE de la Haute-Garonne. Fonctionnaire depuis 1984 au ministère des PPT, il a gravi les échelons. Militant syndical, il a exercé diverses responsabilités. Elu au CHSCT, délégué local cadre d’unité nationale il a également siégé à la CAF de la Haute-Garonne en tant qu’administrateur. Son parcours témoigne d’un engagement fort pour la justice sociale et son sens du collectif qui fait de lui un président investi et fédérateur",
     },
     {
-      image: member4,
+      image: "/media/a-propos/img_member-4.webp",
       title: "MYRIAM DE FAVERI - Trésorière",
       alt: "Photo de la trésorière de l'association, MYRIAM DE FAVERI",
       description:
         "Forte de plus de 15 ans d’expérience dans un cabinet d’avocat spécialisé en droit de la famille, Myriam apporte son expertise rigoureuse et bienveillante à la gestion financière de l’association. Elle a diversifié ses compétences et connaissances au sein de l’Education Nationale par son engagement d’AESH auprès d’enfants en situation de handicap. Fondatrice de l’association A-SOLIDAIRE (Téléthon), et ayant des fonctions dans le club de badminton et para-badminton de Labège. Elle s’investit activement dans les causes solidaires, garantissant à B2L transparence et éthique dans sa gestion.",
     },
     {
-      image: member2,
+      image: "/media/a-propos/img_member-2.webp",
       title: "Gaelle ROBILLARD - Secrétaire",
       alt: "Photo de la secrétaire de l'association, Gaelle ROBILLARD",
       description:
         "Diplômée en psychologie, monitrice éducatrice et éducatrice spécialisée, Gaëlle cumule depuis plus de 10 ans d’expériences dans le secteur médico-social, social. Elle s’attache à créer des environnements rassurants et porteurs de résilience pour les jeunes en difficultés, en plaçant la collaboration et l’écoute au cœur de son approche. Son engagement, son analyse, son regard humain et son professionnalisme sont d’elle un pilier essentiel au bureau.",
     },
     {
-      image: member1,
+      image: "/media/a-propos/img_member-1.webp",
       title: "Amandine CUNY - Fondatrice, directrice",
       alt: "Photo de la fondatrice et directrice de l'association, Amandine CUNY",
       description:
         "Fondatrice et chef de file du projet Bouger les Lignes qui murit depuis plus de 10 ans pour se concrétiser. Amandine a construit son parcours autour de la transmission, résilience et par de l’engagement social. Issue du secteur sanitaire et social, elle a complété son expérience de 10 ans dans la restauration et de 5 autour d’un parc de loisirs. Titulaire d’un Master 2 en Gestion des Entreprises du Social et de Santé, diplômée en Formation pour Adultes et en Psycho-Criminologie, elle allie vison stratégique et ancrage de terrain. Animée par la conviction que la prévention passe par la parole, la pédagogie et la solidarité, elle a créé Bouger les Lignes pour agir autrement, avec indépendance, créativité et impact. ",
     },
   ],
+
+  cloe: {
+    image: "/media/a-propos/img_member-5.webp",
+    alt: "Photo de CLOE CORREA, marraine de l'association et joueuse au Stade Toulousain",
+    title: "CLOE CORREA - Marraine de l'association",
+    description:
+      "Cloé Correa est une joueuse de rugby évoluant au poste de deuxième ligne au sein du Stade Toulousain Féminin. Formée entre Albi et Toulouse, elle fait partie des jeunes talents prometteurs du rugby français grâce à son engagement, sa puissance et sa régularité sur le terrain. Championne de France Réserves Élite et double vainqueure de la Coupe de France avec le Stade Toulousain, elle a également été sélectionnée en équipe de France, notamment pour le Tournoi des Six Nations. Très touchée et impliquée par les sujets portés par B2L, Cloé s’investit également dans le tissu associatif toulousain et soutient activement les initiatives locales en faveur de la solidarité, de l’inclusion et du vivre-ensemble.",
+  },
 
   adherent: {
     title: "Les adhérents : le cœur battant de l’association",
@@ -142,29 +177,34 @@ export const serviceIndex = {
     {
       type: "Service" as TypeCards,
       title: "Capitole",
+      image: "/media/services/capitole.webp",
       description:
-        "Session structurée  | 3h30 <br/>Une intervention pour clarifier les repères essentiels (respect, consentement, limites), comprendre les mécanismes des violences et adopter une posture adaptée face aux situations sensibles.Format destiné aux professionnels souhaitant renforcer leurs pratiques, avec des apports concrets, des repères clairs et des outils directement mobilisables.",
+        "<strong>Session structurée  | 3h30</strong> <br/><br/> Inspiré par le cœur institutionnel de Toulouse, ce module propose un cadre structuré et des repères clairs pour les professionnels.",
       to: "/services/capitole/session-structuree",
     },
     {
       type: "Service" as TypeCards,
       title: "Saint-Sernin",
+      image: "/media/services/saintsernin.webp",
       description:
-        "Journée pédagogique | 7h <br/> Une journée pour mieux comprendre les mécanismes des violences, analyser des situations concrètes et ajuster les pratiques professionnelles.Un format qui permet aux équipes de prendre du recul, d’échanger et de renforcer une posture commune face aux situations de terrain.",
+        "<strong>Journée pédagogique | 7h</strong> <br/><br/> À l’image du quartier Saint-Sernin, lieu de rencontre et de diversité, ce module favorise les échanges et la construction collective.",
       to: "services/sernin/journee-pedagogique",
     },
     {
       type: "Service" as TypeCards,
       title: "Carmes",
+      image: "/media/services/carmes.webp",
       description:
-        "Sensibilisation des jeunes | 1h30 <br/> Une intervention adaptée aux adolescents pour comprendre les violences, leurs mécanismes et leurs impacts, et encourager une réflexion sur les relations, le respect et le consentement. Un format dynamique qui aborde les réalités des jeunes (pression sociale, cyberharcèlement, violences sexuelles) et favorise l’expression et la prise de conscience.",
+        "<strong>Sensibilisation des jeunes | 1h30</strong><br/>Inspiré par l’énergie du quartier des Carmes, ce module aborde les relations, les dynamiques sociales et les réalités des jeunes.",
+
       to: "services/carmes/sensibilisation-des-jeunes",
     },
     {
       type: "Service" as TypeCards,
       title: "Esquirol",
+      image: "/media/services/esquirol.webp",
       description:
-        "Sensibilisation enfants | 1h  <br/>Une première sensibilisation pour introduire les notions de respect, de limites et de consentement auprès des enfants.Un format adapté au primaire, ludique et accessible, pour aider à identifier les situations inconfortables, comprendre ses émotions et repérer les adultes ressources.",
+        "<strong>Sensibilisation enfants | 1h </strong> <br/><br/>Situé au cœur des circulations et des rencontres, le quartier Esquirol inspire ce module accessible et adapté aux plus jeunes.",
       to: "services/esquirol/sensibilisation-enfants",
     },
   ],

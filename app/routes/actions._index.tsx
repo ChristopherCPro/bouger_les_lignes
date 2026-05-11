@@ -1,15 +1,26 @@
-import imgIntro from "app/assets/media/pages/services/intro_services.jpg";
 import Intro from "~/components/Intro";
 import Text from "~/components/Text";
 import { serviceIndex } from "~/contents/text";
 import background from "~/assets/media/pages/services/bg_middle-1.jpg";
 import Cards from "~/components/Cards";
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 export default function ActionIndex() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 2]);
+
   return (
     <div className="flex flex-col gap-9 pt-9">
       <div className="container m-auto flex flex-col gap-9">
-        <Intro media={imgIntro} title={serviceIndex.mainTitle} />
+        <Intro
+          media="/media/services/intro_services.webp"
+          title={serviceIndex.mainTitle}
+        />
 
         <Text
           title={serviceIndex.intro.title}
@@ -27,10 +38,17 @@ export default function ActionIndex() {
           />
         ))}
       </div>
-      <div
-        className="flex h-60 bg-cover bg-fixed bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${background})` }}
-      />
+
+      <div className="relative h-60 overflow-hidden">
+        <motion.img
+          ref={ref}
+          src="/media/services/bg_middle-1.webp"
+          alt="image représentnt des pièces de puzzle entassé sur une table"
+          className="absolute h-60 w-full object-cover"
+          style={{ scale }}
+        />
+      </div>
+
       <div className="container mx-auto">
         <Text
           title={serviceIndex.catalogue.title}

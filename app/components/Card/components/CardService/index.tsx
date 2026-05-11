@@ -1,5 +1,4 @@
 import Button from "~/components/ui/Button/Button";
-import picture from "app/assets/media/components/card/services/img_service-1.png";
 import type { CardProps } from "../..";
 
 function formatHtmlChar(text: string | undefined): string {
@@ -16,13 +15,15 @@ export function stripHtmlTags(text?: string) {
   return text.replace(/<\/?[^>]+(>|$)/g, "");
 }
 
-export default function CardService({ title, description, to }: CardProps) {
+export default function CardService({
+  title,
+  description,
+  to,
+  image,
+}: CardProps) {
   return (
     <div className="flex max-w-75 scale-95 flex-col gap-6 rounded-[20px] bg-white pb-9 shadow-xl transition-all duration-300 hover:scale-100">
-      <img
-        src={picture}
-        className="h-45 w-full rounded-t-[20px] object-cover"
-      />
+      <img src={image} className="h-45 w-full rounded-t-[20px] object-cover" />
 
       <div className="flex grow flex-col gap-3 px-6">
         <p className="mb-3 font-bold">{title}</p>

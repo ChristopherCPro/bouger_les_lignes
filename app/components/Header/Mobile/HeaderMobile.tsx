@@ -13,10 +13,12 @@ export const navigation = [
   {
     title: "Actualités",
     url: "/actualites",
+    isDisabled: true,
   },
   {
     title: "FAQ",
     url: "/foire-aux-questions",
+    isDisabled: true,
   },
   {
     title: "Contact",
@@ -121,7 +123,14 @@ export default function HeaderMobile() {
             {navigation.map((i, index) => {
               return (
                 <li key={index} className="text-center">
-                  <a href={i.url}>{i.title}</a>
+                  <a
+                    href={i.url}
+                    className={cn({
+                      "pointer-events-none cursor-not-allowed opacity-50":
+                        i.isDisabled,
+                    })}>
+                    {i.title}
+                  </a>
                   <hr className="border-primary-grey border-0.5 mt-6" />
                 </li>
               );

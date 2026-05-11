@@ -35,8 +35,18 @@ export default function HeaderDesktop() {
       ],
     },
     { title: "A propos", url: "/a-propos", isExternal: false },
-    { title: "Actualités", url: "/actualites", isExternal: false },
-    { title: "FAQ", url: "/foire-aux-questions", isExternal: false },
+    {
+      title: "Actualités",
+      url: "/actualites",
+      isExternal: false,
+      isDisabled: true,
+    },
+    {
+      title: "FAQ",
+      url: "/foire-aux-questions",
+      isExternal: false,
+      isDisabled: true,
+    },
     { title: "Contact", url: "/contact", isExternal: false },
     {
       title: "Adhérer/faire un don",
@@ -63,12 +73,15 @@ export default function HeaderDesktop() {
                     target={i.isExternal ? "_blank" : "_self"}
                     rel={i.isExternal ? "noopener noreferrer" : undefined}
                     className={cn(
-                      "hover:text-secondary-blue flex h-full items-center hover:border-b-2",
+                      "hover:text-secondary-blue flex h-full cursor-pointer items-center hover:border-b-2",
                       {
                         "text-primary-orange hover:text-primary-orange":
                           index === navigation.length - 1,
+                        "pointer-events-none cursor-not-allowed opacity-50":
+                          i.isDisabled,
                       },
                     )}
+                    aria-disabled={i.isDisabled ? true : false}
                     onMouseEnter={() => i.subNav && setIsOpen(true)}
                     onMouseLeave={() => i.subNav && setIsOpen(false)}
                     onKeyDown={(e) => {

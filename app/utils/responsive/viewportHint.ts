@@ -7,7 +7,7 @@ export const mobileDetection = (headers: Headers) => {
 
 export const viewportHint = {
   cookieName: "CH-viewport",
-  getValueCode: "window.screen.availWitdh",
+  getValueCode: "window.screen.availWidth",
   fallback: 1024,
 } as const;
 

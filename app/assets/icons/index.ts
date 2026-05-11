@@ -13,6 +13,11 @@ import chevronDown from "./chevronDown.svg?react";
 import chevronUp from "./chevronUp.svg?react";
 import chevronLeft from "./chevronLeft.svg?react";
 import chevronRight from "./chevronRight.svg?react";
+import capitol from "./capitol.svg?react";
+import carmes from "./carmes.svg?react";
+import esquirol from "./esquirol.svg?react";
+import sernin from "./sernin.svg?react";
+import heart from "./heart.svg?react";
 
 export default {
   twitter: twitter,
@@ -30,6 +35,11 @@ export default {
   chevronUp: chevronUp,
   chevronLeft: chevronLeft,
   chevronRight: chevronRight,
+  capitol: capitol,
+  carmes: carmes,
+  esquirol: esquirol,
+  sernin: sernin,
+  heart: heart,
 };
 
 export type IconName =
@@ -47,4 +57,8 @@ export type IconName =
   | "chevronUp"
   | "chevronLeft"
   | "chevronRight"
-  | "map";
+  | "capitol"
+  | "carmes"
+  | "esquirol"
+  | "sernin"
+  | "heart";

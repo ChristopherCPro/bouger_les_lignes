@@ -2,8 +2,6 @@ import { navigation } from "~/components/Header/Mobile/HeaderMobile";
 
 import logo from "app/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
-import { Icon } from "~/components/ui/Icon";
-import BurgerButton from "~/components/ui/BurgerButton/BurgerButton";
 
 export default function FooterDesktop() {
   const currentYear = new Date().getFullYear();
@@ -28,7 +26,7 @@ export default function FooterDesktop() {
           </ul>
         </div>
         <div className="w-1/3">
-          <h3>Lorem Ipsum</h3>
+          <h3>Bouger les lignes</h3>
           <p>
             B2L intervient à Toulouse, en Haute-Garonne et en Occitanie pour des
             actions de sensibilisation, de prévention et de formation autour des

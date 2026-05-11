@@ -13,6 +13,9 @@ export type CardProps = {
   description?: string;
   to?: string;
   icon?: IconName;
+  timestamp?: string;
+  like_count?: number;
+  isPartenaire?: boolean;
 };
 
 export default function Card(props: CardProps) {
