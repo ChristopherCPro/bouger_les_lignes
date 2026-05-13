@@ -4,6 +4,7 @@ import logo from "app/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
 import { Icon } from "~/components/ui/Icon";
 import BurgerButton from "~/components/ui/BurgerButton/BurgerButton";
+import { cn } from "~/utils/ui";
 
 export default function FooterMobile() {
   const currentYear = new Date().getFullYear();
@@ -19,7 +20,13 @@ export default function FooterMobile() {
                 <li key={index}>
                   <a
                     href={i.url}
-                    className="hover:text-tertiary-blue transition-all duration-300">
+                    className={cn(
+                      "hover:text-tertiary-blue transition-all duration-300",
+                      {
+                        "pointer-events-none cursor-not-allowed opacity-50":
+                          i.isDisabled,
+                      },
+                    )}>
                     {i.title}
                   </a>
                 </li>
@@ -61,7 +68,7 @@ export default function FooterMobile() {
       </div>
       <div className="flex w-full justify-center">
         <ul className="flex list-none space-x-8">
-          <li>
+          {/* <li>
             <Button
               title="Suivez nous sur le réseau social X"
               to="https://x.com/?lang=fr"
@@ -69,19 +76,25 @@ export default function FooterMobile() {
               icon="twitter"
               externalLink
             />
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Button to="/" type="icon" icon="facebook" />
-          </li>
+          </li> */}
           <li>
-            <Button to="/" type="icon" icon="instagram" />
+            <Button
+              to="https://www.instagram.com/b2l_bougerleslignes/"
+              type="icon"
+              icon="instagram"
+              title="Suivez-nous sur Instagram"
+              externalLink
+            />
           </li>
-          <li>
+          {/* <li>
             <Button to="/" type="icon" icon="linkedin" />
           </li>
           <li>
             <Button to="/" type="icon" icon="tiktok" />
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="font-verdana flex w-full flex-col items-center gap-3 pb-9 text-xs font-bold">
@@ -89,7 +102,7 @@ export default function FooterMobile() {
           <span className="font-thin">&copy; {currentYear}</span> - Bouger les
           lignes
         </p>
-        <Button to="/" title="Mentions Légales" />
+        <Button to="/mentions-legales" title="Mentions Légales" />
         <p> Designed with ❤️</p>
       </div>
     </footer>

@@ -56,77 +56,90 @@ export default function HeaderDesktop() {
   ];
 
   return (
-    <header
-      id="mainHeader"
-      className="sticky top-0 z-40 h-20 w-full bg-white shadow-xl">
-      <div className="flex h-full w-full items-center justify-between px-20">
-        <a href="/">
-          <img src={logo} alt="Logo B2L" />
-        </a>
-        <nav aria-label="Navigation principale" className="h-full">
-          <ul className="flex h-full list-none space-x-4">
-            {navigation.map((i, index) => {
-              return (
-                <li key={index}>
-                  <a
-                    href={i.url}
-                    target={i.isExternal ? "_blank" : "_self"}
-                    rel={i.isExternal ? "noopener noreferrer" : undefined}
-                    className={cn(
-                      "hover:text-secondary-blue flex h-full cursor-pointer items-center hover:border-b-2",
-                      {
-                        "text-primary-orange hover:text-primary-orange":
-                          index === navigation.length - 1,
-                        "pointer-events-none cursor-not-allowed opacity-50":
-                          i.isDisabled,
-                      },
-                    )}
-                    aria-disabled={i.isDisabled ? true : false}
-                    onMouseEnter={() => i.subNav && setIsOpen(true)}
-                    onMouseLeave={() => i.subNav && setIsOpen(false)}
-                    onKeyDown={(e) => {
-                      if ((e.key === "Enter" || e.key === " ") && i.subNav) {
-                        setIsOpen(true);
-                      }
-                      if (e.key === "Escape" && i.subNav) {
-                        setIsOpen(false);
-                      }
-                    }}>
-                    {i.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          {isOpen && (
-            <div
-              className="max-w-131"
-              onMouseEnter={() => setIsOpen(true)}
-              onMouseLeave={() => setIsOpen(false)}
-              onKeyDown={(e) => {
-                if (e.key === "Escape") {
-                  setIsOpen(false);
-                }
-              }}>
-              <ul className="flex h-full list-none flex-col space-y-1 overflow-hidden rounded-b-lg bg-gray-50 shadow-2xl">
-                {navigation[0].subNav?.map((i, index) => {
-                  return (
-                    <li key={index}>
-                      <a
-                        href={i.url}
-                        className={cn(
-                          "hover:text-secondary-blue flex h-full items-center p-3 hover:bg-gray-200",
-                        )}>
-                        {i.title}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          )}
-        </nav>
-      </div>
-    </header>
+    <>
+      <a
+        href="#mainContent"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-black focus:shadow-lg">
+        Aller au contenu principal
+      </a>
+      <header
+        id="mainHeader"
+        className="sticky top-0 z-40 h-20 w-full bg-white shadow-xl">
+        <div className="flex h-full w-full items-center justify-between px-20">
+          <a href="/">
+            <img
+              src={logo}
+              alt="Logo B2L"
+              width={50}
+              height={30}
+              className="w-full"
+            />
+          </a>
+          <nav aria-label="Navigation principale" className="h-full">
+            <ul className="flex h-full list-none space-x-4">
+              {navigation.map((i, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={i.url}
+                      target={i.isExternal ? "_blank" : "_self"}
+                      rel={i.isExternal ? "noopener noreferrer" : undefined}
+                      className={cn(
+                        "hover:text-secondary-blue flex h-full cursor-pointer items-center hover:border-b-2",
+                        {
+                          "text-primary-orange hover:text-primary-orange":
+                            index === navigation.length - 1,
+                          "pointer-events-none cursor-not-allowed opacity-50":
+                            i.isDisabled,
+                        },
+                      )}
+                      aria-disabled={i.isDisabled ? true : false}
+                      onMouseEnter={() => i.subNav && setIsOpen(true)}
+                      onMouseLeave={() => i.subNav && setIsOpen(false)}
+                      onKeyDown={(e) => {
+                        if ((e.key === "Enter" || e.key === " ") && i.subNav) {
+                          setIsOpen(true);
+                        }
+                        if (e.key === "Escape" && i.subNav) {
+                          setIsOpen(false);
+                        }
+                      }}>
+                      {i.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+            {isOpen && (
+              <div
+                className="max-w-131"
+                onMouseEnter={() => setIsOpen(true)}
+                onMouseLeave={() => setIsOpen(false)}
+                onKeyDown={(e) => {
+                  if (e.key === "Escape") {
+                    setIsOpen(false);
+                  }
+                }}>
+                <ul className="flex h-full list-none flex-col space-y-1 overflow-hidden rounded-b-lg bg-gray-50 shadow-2xl">
+                  {navigation[0].subNav?.map((i, index) => {
+                    return (
+                      <li key={index}>
+                        <a
+                          href={i.url}
+                          className={cn(
+                            "hover:text-secondary-blue flex h-full items-center p-3 hover:bg-gray-200",
+                          )}>
+                          {i.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+          </nav>
+        </div>
+      </header>
+    </>
   );
 }

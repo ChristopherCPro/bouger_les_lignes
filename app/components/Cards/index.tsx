@@ -11,8 +11,6 @@ export type CardsProps = {
 };
 
 export default function Cards({ direction, maxCardPerLine, card }: CardsProps) {
-  const isMobile = useViewport();
-
   const gridCols = useMemo(() => {
     if (direction === "column") return "grid-cols-1 gap-4";
 
@@ -30,7 +28,7 @@ export default function Cards({ direction, maxCardPerLine, card }: CardsProps) {
           return "md:grid-cols-6";
 
         default:
-          "md:grid-cols-1";
+          return "md:grid-cols-1";
       }
     }
   }, [direction, maxCardPerLine]);

@@ -15,7 +15,7 @@ export default function InformationPanel(info: infoType) {
   return (
     <div className="flex flex-col gap-9">
       <div className="border-tertiary-blue flex min-h-44 flex-col gap-6 rounded-lg border border-t-15 p-5">
-        <h3 className="intertitre">Information complémentaire</h3>
+        <h2 className="intertitre">Information complémentaire</h2>
         <p>
           <span className="font-semibold">Nombre de participant : </span>{" "}
           {info.info.nbr_participant}

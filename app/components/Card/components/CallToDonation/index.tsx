@@ -17,7 +17,7 @@ export default function CallToDonation({ title, description, to }: CardProps) {
       style={backgroundStyle}>
       <div className="flex flex-col items-center gap-9 md:flex-row">
         <div className="flex w-full flex-col gap-3 text-justify md:w-1/2">
-          <h3 className="intertitre">{title}</h3>
+          <h2 className="intertitre">{title}</h2>
           <p>
             Soutenir Bouger les Lignes B2L, c’est agir concrètement pour
             prévenir les violences, sensibiliser les enfants, les jeunes et les

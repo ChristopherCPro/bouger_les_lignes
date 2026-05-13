@@ -10,6 +10,43 @@ export const index = {
     },
   ],
 
+  cardService: [
+    {
+      type: "Service" as TypeCards,
+      title: "Capitole",
+      image: "/media/services/capitole.webp",
+      description:
+        "<strong>Session structurée  | 3h30</strong> <br/><br/> Inspiré par le cœur institutionnel de Toulouse, ce module propose un cadre structuré et des repères clairs pour les professionnels.",
+      to: "/actions/capitole/session-structuree",
+    },
+    {
+      type: "Service" as TypeCards,
+      title: "Saint-Sernin",
+      image: "/media/services/saintsernin.webp",
+      description:
+        "<strong>Journée pédagogique | 7h</strong> <br/><br/> À l’image du quartier Saint-Sernin, lieu de rencontre et de diversité, ce module favorise les échanges et la construction collective.",
+      // description:
+      //   "Journée pédagogique | 7h <br/> Une journée pour mieux comprendre les mécanismes des violences, analyser des situations concrètes et ajuster les pratiques professionnelles.Un format qui permet aux équipes de prendre du recul, d’échanger et de renforcer une posture commune face aux situations de terrain.",
+      to: "/actions/sernin/journee-pedagogique",
+    },
+    {
+      type: "Service" as TypeCards,
+      title: "Carmes",
+      image: "/media/services/carmes.webp",
+      description:
+        "<strong>Sensibilisation des jeunes | 1h30</strong><br/>Inspiré par l’énergie du quartier des Carmes, ce module aborde les relations, les dynamiques sociales et les réalités des jeunes.",
+      to: "/actions/carmes/sensibilisation-des-jeunes",
+    },
+    {
+      type: "Service" as TypeCards,
+      title: "Esquirol",
+      image: "/media/services/esquirol.webp",
+      description:
+        "<strong>Sensibilisation enfants | 1h </strong> <br/><br/>Situé au cœur des circulations et des rencontres, le quartier Esquirol inspire ce module accessible et adapté aux plus jeunes.",
+      to: "/actions/esquirol/sensibilisation-enfants",
+    },
+  ],
+
   partenaire: [
     {
       type: "Media" as TypeCards,
@@ -140,7 +177,7 @@ export const serviceIndex = {
           desc: "<p class='mb-3'>Nos formations et interventions de prévention permettent aux structures/entités (écoles, associations, collectivités, clubs sportifs, entreprises…) de renforcer leurs connaissances, d’acquérir des outils pratiques des postures éducatives favorisant le respect, la prévention et la bienveillance. Elles s’adressent à tous les acteurs de terrain : professionnels, bénévoles, encadrants, éducateurs, accompagnants… L’objectif : donner à chacun les moyens d’agir en prévention, de repérer les signaux et de mieux comprendre les mécanismes des violences.</p>",
         },
         {
-          desc: "<h3 class='my-6 font-semibold text-base'>Notre approche</h3><p>Des modules vivants, concrets et interactifs, fondés sur la pédagogie active, l’échange d’expériences et la co-construction. Nous privilégions une Notre approche bienveillante, claire et humaine qui valorise la participation de chacun et la mise en pratique. </p>",
+          desc: "<h3 class='my-6 font-semibold text-base'>Notre approche</h2><p>Des modules vivants, concrets et interactifs, fondés sur la pédagogie active, l’échange d’expériences et la co-construction. Nous privilégions une Notre approche bienveillante, claire et humaine qui valorise la participation de chacun et la mise en pratique. </p>",
         },
       ],
     },
@@ -151,7 +188,7 @@ export const serviceIndex = {
           desc: "<p class='mb-3'>Nos actions de sensibilisation s’adressent aux enfants, adolescents, parents et adultes. Elles visent à éveiller les consciences, à ouvrir le dialogue et à encourager le respect du corps, du consentement et de l’autre. A travers des ateliers participatifs et à des échanges adaptés à chaque tranche d’âge et de capacités, nous créons un espace d’expression et d’écoute qui permet de mieux comprendre les enjeux du respect, de la tolérance et de la prévention des violences.</p>",
         },
         {
-          desc: "<h3 class='my-6 font-semibold text-base'>Notre approche</h3><p>Des interventions adaptées à chaque public, dans un format ludique, participatif et accessible. Chaque séance repose sur de la discussion, de la prévention active, pour favoriser les réflexions et la parole libre.</p>",
+          desc: "<h3 class='my-6 font-semibold text-base'>Notre approche</h2><p>Des interventions adaptées à chaque public, dans un format ludique, participatif et accessible. Chaque séance repose sur de la discussion, de la prévention active, pour favoriser les réflexions et la parole libre.</p>",
         },
       ],
     },
@@ -169,7 +206,7 @@ export const serviceIndex = {
     title: "Notre catalogue de sensibilisation et de prévention",
     paragraph: [
       {
-        desc: "<p class='mb-3'>Bouger les Lignes B2L propose un catalogue de sensibilisation et de prévention regroupant l’ensemble de ses actions, formations et interventions autour des violences intra et extra-familiales : violences sexuelles, violences conjugales, harcèlement scolaire, inceste, consentement, respect du corps et des émotions. Ce catalogue permet de présenter les thématiques abordées, les objectifs pédagogiques, les publics concernés et les modalités générales d’intervention.</p><p class='mb-3'>Les modules proposés constituent des bases de travail, adaptables selon le contexte, le public et les besoins spécifiques de chaque structure.</p><h3 class='my-6 font-semibold text-base'>Le sens des sensibilisations payantes</h3><p class='mb-3'>Les actions de sensibilisation et de formation proposées par Bouger les Lignes B2L sont payantes.</p><p class='mb-3'>Ce choix s’inscrit dans une volonté de :</p> <ul class='ps-3 mb-3 md:ps-9 list-disc'><li>Garantir des interventions de qualité, préparées et adaptées, </li><li>Reconnaître le travail de conception pédagogique, d’animation et de suivi, </li><li>Assurer la pérennité des actions de prévention portées par l’association, </li><li>Permettre le développement de projets d’intérêt général et d’actions auprès de publics plus fragiles. </li></ul><p class='mb-3'>Les prestations financent directement le fonctionnement de l’association et contribuent à la mission sociale de Bouger les Lignes B2L. </p><p class='mb-3'>Toute intervention fait l’objet d’un échange préalable afin de :</p><ul class='ps-3 mb-3 md:ps-9 list-disc'><li>Comprendre vos objectifs, </li><li>Identifier le public concerné, </li><li>Adapter le contenu et le format, </li><li>Définir la durée et les modalités d’intervention. </li></ul>",
+        desc: "<p class='mb-3'>Bouger les Lignes B2L propose un catalogue de sensibilisation et de prévention regroupant l’ensemble de ses actions, formations et interventions autour des violences intra et extra-familiales : violences sexuelles, violences conjugales, harcèlement scolaire, inceste, consentement, respect du corps et des émotions. Ce catalogue permet de présenter les thématiques abordées, les objectifs pédagogiques, les publics concernés et les modalités générales d’intervention.</p><p class='mb-3'>Les modules proposés constituent des bases de travail, adaptables selon le contexte, le public et les besoins spécifiques de chaque structure.</p><h3 class='my-6 font-semibold text-base'>Le sens des sensibilisations payantes</h2><p class='mb-3'>Les actions de sensibilisation et de formation proposées par Bouger les Lignes B2L sont payantes.</p><p class='mb-3'>Ce choix s’inscrit dans une volonté de :</p> <ul class='ps-3 mb-3 md:ps-9 list-disc'><li>Garantir des interventions de qualité, préparées et adaptées, </li><li>Reconnaître le travail de conception pédagogique, d’animation et de suivi, </li><li>Assurer la pérennité des actions de prévention portées par l’association, </li><li>Permettre le développement de projets d’intérêt général et d’actions auprès de publics plus fragiles. </li></ul><p class='mb-3'>Les prestations financent directement le fonctionnement de l’association et contribuent à la mission sociale de Bouger les Lignes B2L. </p><p class='mb-3'>Toute intervention fait l’objet d’un échange préalable afin de :</p><ul class='ps-3 mb-3 md:ps-9 list-disc'><li>Comprendre vos objectifs, </li><li>Identifier le public concerné, </li><li>Adapter le contenu et le format, </li><li>Définir la durée et les modalités d’intervention. </li></ul>",
       },
     ],
   },
@@ -180,7 +217,7 @@ export const serviceIndex = {
       image: "/media/services/capitole.webp",
       description:
         "<strong>Session structurée  | 3h30</strong> <br/><br/> Inspiré par le cœur institutionnel de Toulouse, ce module propose un cadre structuré et des repères clairs pour les professionnels.",
-      to: "/services/capitole/session-structuree",
+      to: "/actions/capitole/session-structuree",
     },
     {
       type: "Service" as TypeCards,
@@ -188,7 +225,7 @@ export const serviceIndex = {
       image: "/media/services/saintsernin.webp",
       description:
         "<strong>Journée pédagogique | 7h</strong> <br/><br/> À l’image du quartier Saint-Sernin, lieu de rencontre et de diversité, ce module favorise les échanges et la construction collective.",
-      to: "services/sernin/journee-pedagogique",
+      to: "/actions/sernin/journee-pedagogique",
     },
     {
       type: "Service" as TypeCards,
@@ -197,7 +234,7 @@ export const serviceIndex = {
       description:
         "<strong>Sensibilisation des jeunes | 1h30</strong><br/>Inspiré par l’énergie du quartier des Carmes, ce module aborde les relations, les dynamiques sociales et les réalités des jeunes.",
 
-      to: "services/carmes/sensibilisation-des-jeunes",
+      to: "/actions/carmes/sensibilisation-des-jeunes",
     },
     {
       type: "Service" as TypeCards,
@@ -205,7 +242,7 @@ export const serviceIndex = {
       image: "/media/services/esquirol.webp",
       description:
         "<strong>Sensibilisation enfants | 1h </strong> <br/><br/>Situé au cœur des circulations et des rencontres, le quartier Esquirol inspire ce module accessible et adapté aux plus jeunes.",
-      to: "services/esquirol/sensibilisation-enfants",
+      to: "/actions/esquirol/sensibilisation-enfants",
     },
   ],
 };

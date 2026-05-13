@@ -4,7 +4,7 @@ import Input from "../ui/Input";
 import { formContactSchema } from "~/utils/schema/formContactSchema";
 import type { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Textarea from "../ui/Textearea";
+import Textarea from "../ui/Textarea";
 import { useEffect } from "react";
 import toast from "react-hot-toast";
 
@@ -13,8 +13,20 @@ const resolver = zodResolver(formContactSchema);
 
 export default function FormContact() {
   const data = useActionData();
+  const {
+    handleSubmit,
+    formState: { errors },
+    register,
+    reset,
+  } = useRemixForm<FormData>({
+    mode: "onBlur",
+    resolver,
+  });
+
   useEffect(() => {
-    if (data && data.success) {
+    if (!data) return;
+
+    if (data.success) {
       toast.custom((t) => (
         <div
           className={`${
@@ -36,17 +48,12 @@ export default function FormContact() {
       ));
       reset();
     }
+
+    if (data.error) {
+      toast.error(data.error);
+    }
   }, [data]);
 
-  const {
-    handleSubmit,
-    formState: { errors },
-    register,
-    reset,
-  } = useRemixForm<FormData>({
-    mode: "onBlur",
-    resolver,
-  });
   return (
     <div>
       <Form
