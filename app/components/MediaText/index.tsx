@@ -55,6 +55,8 @@ export default function MediaText({
           <img
             loading="lazy"
             src={media}
+            width={800}
+            height={600}
             className="m-auto h-full"
             alt={altDescription}
           />
@@ -63,6 +65,8 @@ export default function MediaText({
             <img
               loading="lazy"
               src={media}
+              width={800}
+              height={600}
               className="m-auto h-full"
               alt={altDescription}
             />

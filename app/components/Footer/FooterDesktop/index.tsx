@@ -2,6 +2,7 @@ import { navigation } from "~/components/Header/Mobile/HeaderMobile";
 
 import logo from "app/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
+import { cn } from "~/utils/ui";
 
 export default function FooterDesktop() {
   const currentYear = new Date().getFullYear();
@@ -11,19 +12,27 @@ export default function FooterDesktop() {
       <div className="container mx-auto flex gap-8">
         <div className="w-1/3">
           {" "}
-          <ul className="flex w-3/4 list-none flex-col gap-3.5">
-            {navigation.map((i, index) => {
-              return (
-                <li key={index}>
-                  <a
-                    href={i.url}
-                    className="hover:text-tertiary-blue transition-all duration-300">
-                    {i.title}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <nav aria-label="Navigation secondaire">
+            <ul className="flex w-3/4 list-none flex-col gap-3.5">
+              {navigation.map((i, index) => {
+                return (
+                  <li key={index}>
+                    <a
+                      href={i.url}
+                      className={cn(
+                        "hover:text-tertiary-blue transition-all duration-300",
+                        {
+                          "pointer-events-none cursor-not-allowed opacity-50":
+                            i.isDisabled,
+                        },
+                      )}>
+                      {i.title}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
         </div>
         <div className="w-1/3">
           <h3>Bouger les lignes</h3>
@@ -59,27 +68,33 @@ export default function FooterDesktop() {
       </div>
       <div className="flex w-full justify-center">
         <ul className="flex list-none space-x-8">
+          {/* <li>
+                   <Button
+                     title="Suivez nous sur le réseau social X"
+                     to="https://x.com/?lang=fr"
+                     type="icon"
+                     icon="twitter"
+                     externalLink
+                   />
+                 </li> */}
+          {/* <li>
+                   <Button to="/" type="icon" icon="facebook" />
+                 </li> */}
           <li>
             <Button
-              title="Suivez nous sur le réseau social X"
-              to="https://x.com/?lang=fr"
+              to="https://www.instagram.com/b2l_bougerleslignes/"
               type="icon"
-              icon="twitter"
+              icon="instagram"
+              title="Suivez-nous sur Instagram"
               externalLink
             />
           </li>
-          <li>
-            <Button to="/" type="icon" icon="facebook" />
-          </li>
-          <li>
-            <Button to="/" type="icon" icon="instagram" />
-          </li>
-          <li>
-            <Button to="/" type="icon" icon="linkedin" />
-          </li>
-          <li>
-            <Button to="/" type="icon" icon="tiktok" />
-          </li>
+          {/* <li>
+                   <Button to="/" type="icon" icon="linkedin" />
+                 </li>
+                 <li>
+                   <Button to="/" type="icon" icon="tiktok" />
+                 </li> */}
         </ul>
       </div>
       <div className="font-verdana flex w-full flex-col items-center gap-3 text-xs font-bold">
@@ -87,7 +102,7 @@ export default function FooterDesktop() {
           <span className="font-thin">&copy; {currentYear}</span> - Bouger les
           lignes
         </p>
-        <Button to="/" title="Mentions Légales" />
+        <Button to="/mentions-legales" title="Mentions Légales" />
         <p> Designed with ❤️</p>
       </div>
     </footer>

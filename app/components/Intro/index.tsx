@@ -26,8 +26,10 @@ export default function Intro({
       {media && (
         <div className="h-90.5 md:w-1/2">
           <img
-            loading="lazy"
+            fetchPriority="high"
             src={media}
+            width={700}
+            height={300}
             className="m-auto h-full w-11/12 rounded-lg object-cover object-top-left md:w-full md:rounded-2xl md:px-0"
             alt={altDescription}
           />

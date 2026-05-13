@@ -30,7 +30,11 @@ export default function Button({
         className={cn(className)}
         rel={externalLink ? "noopener noreferrer" : undefined}
         target={externalLink ? "_blank" : undefined}>
-        {img ? <img src={img} alt={title} /> : <p>{title}</p>}
+        {img ? (
+          <img src={img} alt={title} width={100} height={75} />
+        ) : (
+          <p>{title}</p>
+        )}
       </a>
     );
   }

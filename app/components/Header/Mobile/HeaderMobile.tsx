@@ -87,9 +87,9 @@ export default function HeaderMobile() {
       <header
         id="mainHeader"
         className="sticky top-0 z-50 h-20 w-full bg-white shadow-xl">
-        <div className="py-2. flex h-full w-full items-center justify-between px-10">
+        <div className="flex h-full w-full items-center justify-between px-10 py-2">
           <a href="/">
-            <img src={logo} className="w-2/3" />
+            <img src={logo} className="w-2/3" width={50} height={30} />
           </a>
           <BurgerButton onToggle={handleToggle} isOpen={isOpen} />
         </div>

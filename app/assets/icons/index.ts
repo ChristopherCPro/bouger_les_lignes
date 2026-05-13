@@ -61,4 +61,5 @@ export type IconName =
   | "carmes"
   | "esquirol"
   | "sernin"
-  | "heart";
+  | "heart"
+  | "map";

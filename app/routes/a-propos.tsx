@@ -10,6 +10,7 @@ export default function PageAPropos() {
       <div className="container m-auto flex flex-col gap-9">
         <Intro
           media="/media/a-propos/img_asso-1.webp"
+          altDescription="Image representant une équipe faisant une réunion autour d'une table carré"
           title={aPropos.mainTitle}
         />
 
@@ -68,7 +69,8 @@ export const meta = () => {
         "Bouger les Lignes B2L – Sensibilisation et prévention des violences",
     },
     {
-      description:
+      name: "description",
+      content:
         "Bouger les Lignes, B2L, association toulousaine dédiée à la sensibilisation et à la prévention des violences. Agissons ensemble pour éveiller les consciences. Nous privilégions une approche bienveillante qui place le dialogue et la réflexion commune au cœur du dispositif de la co-construction. Chez B2L, chaque action de sensibilisation inclue les victimes, les témoins, et les auteurs. Nous partons du principe qu’une personne ne se résume pas à un acte, ni à un rôle subit ou commis. Notre démarche repose sur l’écoute, la responsabilité, la compréhension et la prévention afin d’encourager un changement durable des comportements et des mentalités",
     },
   ];

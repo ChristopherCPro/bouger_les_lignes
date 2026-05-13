@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/a-propos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/actions</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/actions/capitole/session-structuree</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/actions/carmes/sensibilisation-des-jeunes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/actions/esquirol/sensibilisation-enfants</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/actions/sernin/journee-pedagogique</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- <url>
+    <loc>https://bouger-les-lignes.fr/actualites</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url> -->
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- <url>
+    <loc>https://bouger-les-lignes.fr/foire-aux-questions</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url> -->
+
+  <url>
+    <loc>https://bouger-les-lignes.fr/mentions-legales</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

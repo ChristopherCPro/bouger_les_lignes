@@ -14,10 +14,13 @@ export default function CardMedia({
     <a href={to} target="_blank" rel="noopener noreferrer">
       <div
         className="group relative flex cursor-pointer items-center overflow-hidden rounded-lg md:h-77.5 md:w-77.5"
-        role="button">
+        role="button"
+        tabIndex={0}>
         <img
           src={image}
           alt={description || "image de présentation"}
+          width={310}
+          height={310}
           className={cn(
             "mx-auto h-full object-cover transition-all duration-300 group-hover:scale-110",
             { "h-auto": isPartenaire },
@@ -39,10 +42,13 @@ export default function CardMedia({
   ) : (
     <div
       className="group relative flex cursor-pointer items-center overflow-hidden rounded-lg md:h-77.5 md:w-77.5"
-      role="button">
+      role="button"
+      tabIndex={0}>
       <img
         src={image}
         alt={description || "image de présentation"}
+        width={310}
+        height={310}
         className={cn(
           "mx-auto h-full object-cover transition-all duration-300 group-hover:scale-110",
           { "h-auto": isPartenaire },
