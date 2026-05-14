@@ -8,7 +8,9 @@ export type TypeCards = "CallToDonation" | "Service" | "Media" | "Icon";
 
 export type CardProps = {
   type: TypeCards;
+  media_type?: string;
   image?: string;
+  thumb?: string;
   title?: string;
   description?: string;
   to?: string;

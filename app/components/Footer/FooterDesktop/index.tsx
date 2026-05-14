@@ -1,6 +1,6 @@
 import { navigation } from "~/components/Header/Mobile/HeaderMobile";
 
-import logo from "app/assets/media/logo.webp";
+import logo from "~/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
 import { cn } from "~/utils/ui";
 

@@ -2,6 +2,7 @@ export type Instagram = {
   id: string;
   media_type: "IMAGE" | "VIDEO" | "CAROUSEL_ALBUM";
   media_url: string;
+  thumbnail_url?: string;
   permalink: string;
   timestamp: string;
   like_count: number;

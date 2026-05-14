@@ -1,8 +1,7 @@
 import Banner from "~/components/ui/Banner";
-import picture from "app/assets/media/homepage/img_hp-1.webp";
-import Card, { type TypeCards } from "~/components/Card";
+import picture from "~/assets/media/homepage/img_hp-1.webp";
+import Card from "~/components/Card";
 import Cards from "~/components/Cards";
-import Button from "~/components/ui/Button/Button";
 import MediaText from "~/components/MediaText";
 import Text from "~/components/Text";
 import { index } from "~/contents/text";
@@ -12,7 +11,7 @@ import type { InstagramMedia } from "~/utils/types/InstagramMediaTypes";
 export async function loader({ request }: LoaderFunctionArgs) {
   try {
     const response = await fetch(
-      `https://graph.instagram.com/v23.0/${process.env.APP_ID_INSTAGRAM}/media?fields=id,caption,media_type,media_url,permalink,timestamp,like_count,comments_count`,
+      `https://graph.instagram.com/v23.0/${process.env.APP_ID_INSTAGRAM}/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count`,
       {
         headers: {
           Authorization: `Bearer ${process.env.API_TOKEN_INSTAGRAM}`,
@@ -22,11 +21,12 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
     if (response.ok) {
       const raw = (await response.json()) as InstagramMedia;
-
       const cardsData = raw.data.map((d) => {
         return {
           type: "Media",
+          media_type: d.media_type,
           image: d.media_url,
+          thumb: d.thumbnail_url || "",
           description: d.caption || "",
           to: d.permalink,
           timestamp: d.timestamp,
@@ -36,7 +36,6 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
       return cardsData;
     }
-    console.log(response);
     return {
       message: response.statusText,
       error: response.status,
@@ -52,13 +51,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
 export default function Home() {
   const instaPublication = useLoaderData();
-
   const isError = !Array.isArray(instaPublication);
-
-  console.log(instaPublication);
-
-  console.log(isError);
-
   return (
     <div className="flex flex-col gap-18">
       <Banner />
@@ -98,12 +91,6 @@ export default function Home() {
             <h2 className="intertitre">Nos dernières publications</h2>
             <div className="flex flex-col justify-center gap-9 pt-9">
               <Cards maxCardPerLine={4} card={instaPublication} />
-              <Button
-                to="/"
-                className="border-secondary-blue text-secondary-blue hover:bg-secondary-blue m-auto w-fit rounded-sm border px-9 py-2 transition-all duration-300 hover:text-white"
-                title="Plus d'actualité"
-                isDisabled
-              />
             </div>
           </div>
         </div>

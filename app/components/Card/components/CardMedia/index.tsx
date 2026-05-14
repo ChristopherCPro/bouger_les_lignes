@@ -4,6 +4,8 @@ import { cn } from "~/utils/ui";
 
 export default function CardMedia({
   image,
+  thumb,
+  media_type,
   description,
   title,
   to,
@@ -17,7 +19,7 @@ export default function CardMedia({
         role="button"
         tabIndex={0}>
         <img
-          src={image}
+          src={media_type === "VIDEO" ? thumb : image}
           alt={description || "image de présentation"}
           width={310}
           height={310}
@@ -45,12 +47,12 @@ export default function CardMedia({
       role="button"
       tabIndex={0}>
       <img
-        src={image}
+        src={media_type === "VIDEO" ? thumb : image}
         alt={description || "image de présentation"}
-        width={310}
-        height={310}
+        width={100}
+        height={100}
         className={cn(
-          "mx-auto h-full object-cover transition-all duration-300 group-hover:scale-110",
+          "mx-auto h-full w-full object-cover transition-all duration-300 group-hover:scale-110",
           { "h-auto": isPartenaire },
         )}
       />
