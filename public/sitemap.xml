@@ -2,68 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://bouger-les-lignes.fr/</loc>
+    <loc>https://b-2l.fr/</loc>
     <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://bouger-les-lignes.fr/a-propos</loc>
+    <loc>https://b-2l.fr/a-propos</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://bouger-les-lignes.fr/actions</loc>
+    <loc>https://b-2l.fr/actions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://bouger-les-lignes.fr/actions/capitole/session-structuree</loc>
+    <loc>https://b-2l.fr/actions/capitole/session-structuree</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://bouger-les-lignes.fr/actions/carmes/sensibilisation-des-jeunes</loc>
+    <loc>https://b-2l.fr/actions/carmes/sensibilisation-des-jeunes</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://bouger-les-lignes.fr/actions/esquirol/sensibilisation-enfants</loc>
+    <loc>https://b-2l.fr/actions/esquirol/sensibilisation-enfants</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://bouger-les-lignes.fr/actions/sernin/journee-pedagogique</loc>
+    <loc>https://b-2l.fr/actions/sernin/journee-pedagogique</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- <url>
-    <loc>https://bouger-les-lignes.fr/actualites</loc>
+    <loc>https://b-2l.fr/actualites</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url> -->
 
   <url>
-    <loc>https://bouger-les-lignes.fr/contact</loc>
+    <loc>https://b-2l.fr/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
   <!-- <url>
-    <loc>https://bouger-les-lignes.fr/foire-aux-questions</loc>
+    <loc>https://b-2l.fr/foire-aux-questions</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url> -->
 
   <url>
-    <loc>https://bouger-les-lignes.fr/mentions-legales</loc>
+    <loc>https://b-2l.fr/mentions-legales</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

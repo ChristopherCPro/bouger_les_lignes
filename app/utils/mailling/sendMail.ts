@@ -13,9 +13,14 @@ export async function sendContactEmail(data: contactFormTypes) {
 
   const content = `<html>
       <body>
-          <p>Hello, ${data.firstname}</p>
-          <p>Nous avons bien reçu ton message :
-          ${data.message}</p>
+          <p>Nouveau message du formulaire contact : </p>
+          <p>${data.message}</p>
+
+          <div>
+            <p>Expediteur :  ${data.firstname} ${data.lastname}</p>
+            <p> Telephone : ${data.phone}</p>
+            <p>Mail : ${data.email}</p>
+          </div>
       </body>
   </html>
   `;
@@ -24,7 +29,6 @@ export async function sendContactEmail(data: contactFormTypes) {
     subject: "Nouveau message",
     htmlContent: content,
     sender: { name: "Site - B2L", email: data.email },
-    //to: [{ email: "b2l.asso@gmail.com" }],
-    to: [{ email: "chiarandini.christopher@gmail.com" }],
+    to: [{ email: "b2l.asso@gmail.com" }],
   });
 }
