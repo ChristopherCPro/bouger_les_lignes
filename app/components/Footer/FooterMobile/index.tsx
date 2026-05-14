@@ -1,9 +1,7 @@
 import { navigation } from "~/components/Header/Mobile/HeaderMobile";
 
-import logo from "app/assets/media/logo.webp";
+import logo from "~/assets/media/logo.webp";
 import Button from "~/components/ui/Button/Button";
-import { Icon } from "~/components/ui/Icon";
-import BurgerButton from "~/components/ui/BurgerButton/BurgerButton";
 import { cn } from "~/utils/ui";
 
 export default function FooterMobile() {

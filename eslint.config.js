@@ -7,6 +7,7 @@ import pluginReactHooks from "eslint-plugin-react-hooks";
 import pluginJsxA11y from "eslint-plugin-jsx-a11y";
 import pluginTailwindcss from "eslint-plugin-tailwindcss";
 import pluginUnusedImports from "eslint-plugin-unused-imports";
+import prettierConfig from "eslint-config-prettier";
 
 import globals from "globals";
 

@@ -1,4 +1,4 @@
-import logo from "app/assets/media/logo.webp";
+import logo from "~/assets/media/logo.webp";
 import { useState } from "react";
 import { cn } from "~/utils/ui";
 import type { NavigationTypes } from "..";
