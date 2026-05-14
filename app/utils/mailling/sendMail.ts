@@ -28,7 +28,7 @@ export async function sendContactEmail(data: contactFormTypes) {
   await brevo.transactionalEmails.sendTransacEmail({
     subject: "Nouveau message",
     htmlContent: content,
-    sender: { name: "Site - B2L", email: data.email },
+    sender: { name: "Site - B2L", email: "no-reply@b-2l.fr" },
     to: [{ email: "b2l.asso@gmail.com" }],
   });
 }
