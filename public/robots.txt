@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://bouger-les-lignes.fr/sitemap.xml
+Sitemap: https://b-2l.fr/sitemap.xml
