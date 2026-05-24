@@ -5,10 +5,10 @@ import Cards from "~/components/Cards";
 import MediaText from "~/components/MediaText";
 import Text from "~/components/Text";
 import { index } from "~/contents/text";
-import { useLoaderData, type LoaderFunctionArgs } from "react-router";
+import { useLoaderData } from "react-router";
 import type { InstagramMedia } from "~/utils/types/InstagramMediaTypes";
 
-export async function loader({ request }: LoaderFunctionArgs) {
+export async function loader() {
   try {
     const response = await fetch(
       `https://graph.instagram.com/v23.0/${process.env.APP_ID_INSTAGRAM}/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink,timestamp,like_count,comments_count`,
