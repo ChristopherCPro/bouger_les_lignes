@@ -13,7 +13,7 @@ export default function CallToDonation({ title, description, to }: CardProps) {
 
   return (
     <div
-      className="bg-primary-orange m-auto w-3/4 rounded-3xl p-4 py-12 text-white md:px-9"
+      className="bg-primary-orange m-auto rounded-3xl p-4 py-12 text-white md:px-9 lg:w-3/4"
       style={backgroundStyle}>
       <div className="flex flex-col items-center gap-9 md:flex-row">
         <div className="flex w-full flex-col gap-3 text-justify md:w-1/2">

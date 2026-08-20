@@ -1,10 +1,4 @@
-import {
-  motion,
-  usePageInView,
-  useScroll,
-  useTransform,
-  type Variants,
-} from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { useViewport } from "~/utils/contexts/useViewport";
 import { cn } from "~/utils/ui";
@@ -18,13 +12,21 @@ interface MediaProps {
   className?: string;
 }
 
-export const ScrollCard = ({ children }: { children: React.ReactNode }) => {
+export const ScrollCard = ({
+  children,
+  position,
+}: {
+  children: React.ReactNode;
+  position: string;
+}) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "end end"],
   });
-  const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
+
+  const finalPos = position === "left" ? 100 : -100;
+  const x = useTransform(scrollYProgress, [0, 1], [0, finalPos]);
 
   return (
     <>
@@ -50,7 +52,7 @@ export default function MediaText({
       className={cn("m-auto flex flex-col md:flex-row", {
         "md:flex-row-reverse": mediaPosition === "right",
       })}>
-      <div className="md:w-1/3">
+      <div className="mx-auto w-3/4 md:mx-0 md:w-1/3">
         {isMobile ? (
           <img
             loading="lazy"
@@ -61,7 +63,7 @@ export default function MediaText({
             alt={altDescription}
           />
         ) : (
-          <ScrollCard>
+          <ScrollCard position={mediaPosition ? mediaPosition : "left"}>
             <img
               loading="lazy"
               src={media}

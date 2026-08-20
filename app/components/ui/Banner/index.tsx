@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { useViewport } from "~/utils/contexts/useViewport";
+import { cn } from "~/utils/ui";
 
 export default function Banner() {
   const { isMobile } = useViewport();
@@ -21,24 +22,42 @@ export default function Banner() {
     <div className="flex flex-col">
       <div
         ref={ref}
-        className="relative flex h-[75vh] items-center overflow-hidden">
-        <motion.div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            scale,
-            filter: blur,
-            //backgroundImage: `url("/media/index/bannerIndex.webp")`,
-          }}>
-          <img
-            fetchPriority="high"
-            src="/media/index/bannerIndex.webp"
-            alt=""
-            className="w-full object-contain"
-            width={1920}
-            height={1080}
-          />
-        </motion.div>
-        <div className="relative flex h-1/2 w-full items-center bg-black/45 backdrop-blur-xs md:h-full md:w-1/2">
+        className={cn("relative flex h-[75vh] items-center overflow-hidden", {
+          "h-65": isMobile,
+        })}>
+        {!isMobile ? (
+          <motion.div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              scale,
+              filter: blur,
+            }}>
+            <img
+              fetchPriority="high"
+              src="/media/index/bannerIndex.webp"
+              alt=""
+              className="z-0 w-full object-contain"
+              width={1920}
+              height={1080}
+            />
+          </motion.div>
+        ) : (
+          <div className="absolute top-0 min-h-75">
+            <img
+              fetchPriority="high"
+              src="/media/index/bannerIndex.webp"
+              alt=""
+              className="h-full w-full object-cover"
+              width={1920}
+              height={1080}
+            />
+          </div>
+        )}
+        <div
+          className={cn(
+            "relative flex h-1/2 w-full items-center bg-black/45 backdrop-blur-xs md:h-full md:w-1/2",
+            { "h-75": isMobile },
+          )}>
           <div className="mx-auto text-center text-white">
             <h1>
               <span className="mb-4 block">Agir - Comprendre - Prévenir</span>
@@ -51,8 +70,8 @@ export default function Banner() {
       </div>
       <div className="bg-secondary-blue py-16 text-white">
         <div className="container mx-auto flex flex-col gap-2.5">
-          <h2 className="intertitre">Qui sommes-nous ?</h2>
-          <div className="mx-auto mb-9 w-1/2 text-center">
+          <h2 className="intertitre ms-6 lg:ms-0">Qui sommes-nous ?</h2>
+          <div className="mx-auto mb-9 w-3/4 text-justify lg:w-1/2 lg:text-center">
             Bouger les Lignes est une association toulousaine d’intérêt général
             dédiée à la prévention et la sensibilisation contre les violences
             intra et extra familiales. Nous intervenons auprès d’enfants,

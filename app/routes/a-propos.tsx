@@ -52,10 +52,11 @@ export default function PageAPropos() {
           title={aPropos.cloe.title}
           description={aPropos.cloe.description}
           className="after:bg-tertiary-blue"
+          mediaPosition="left"
         />
       </div>
 
-      <div className="container m-auto">
+      <div className="container m-auto p-9">
         <Card type="CallToDonation" title="Devenez acteur, soutenez nous !" />
       </div>
     </div>

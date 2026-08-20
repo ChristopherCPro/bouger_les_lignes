@@ -59,7 +59,9 @@ export default function ActionIndex() {
       </div>
       <div className="bg-gray-100 py-14">
         <div className="container m-auto">
-          <h2 className="intertitre">Découvrez notre catalogue de formation</h2>
+          <h2 className="intertitre ms-6 lg:ms-0">
+            Découvrez notre catalogue de formation
+          </h2>
 
           <div className="flex justify-center gap-9">
             <Cards maxCardPerLine={4} card={serviceIndex.cardService} />

@@ -70,7 +70,9 @@ export default function Home() {
 
       <div className="bg-gray-100 py-14">
         <div className="container m-auto">
-          <h2 className="intertitre">Découvrez-nos modules personnalisables</h2>
+          <h2 className="intertitre ms-6 lg:ms-0">
+            Découvrez-nos modules personnalisables
+          </h2>
 
           <div className="flex justify-center gap-9">
             <Cards maxCardPerLine={4} card={index.cardService} />
@@ -78,9 +80,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <div className="container mx-auto">
-          <h2 className="intertitre">{index.title}</h2>
+          <h2 className="intertitre ms-6 lg:ms-0">{index.title}</h2>
 
           <Text description={index.paragraph} fullWidth />
         </div>
@@ -88,7 +90,9 @@ export default function Home() {
       {!isError && (
         <div className="bg-gray-100 py-9">
           <div className="container m-auto">
-            <h2 className="intertitre">Nos dernières publications</h2>
+            <h2 className="intertitre ms-6 lg:ms-0">
+              Nos dernières publications
+            </h2>
             <div className="flex flex-col justify-center gap-9 pt-9">
               <Cards maxCardPerLine={4} card={instaPublication} />
             </div>
@@ -98,7 +102,7 @@ export default function Home() {
 
       <div className="py-9">
         <div className="container m-auto">
-          <h2 className="intertitre">Nos partenaires</h2>
+          <h2 className="intertitre ms-6 lg:ms-0">Nos partenaires</h2>
           <div className="flex flex-col justify-center gap-9 py-9">
             <Cards maxCardPerLine={4} card={index.partenaire} />
           </div>
