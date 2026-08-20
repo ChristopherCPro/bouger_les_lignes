@@ -17,7 +17,7 @@ export const action = async ({ request }: ActionFunctionArgs) => {
     request,
     resolver,
   );
-
+  console.log(errors);
   if (errors) {
     throw { errors };
   }
@@ -36,8 +36,8 @@ export const action = async ({ request }: ActionFunctionArgs) => {
 export default function Contact() {
   return (
     <div className="flex h-full flex-col gap-9 py-9">
-      <div className="container m-auto flex h-full flex-col gap-9 px-9 md:px-0">
-        <div className="flex h-full w-full flex-col-reverse items-center gap-3 md:flex-row">
+      <div className="container m-auto flex h-full flex-col gap-9 md:px-0">
+        <div className="flex h-full w-full flex-col items-center gap-3 md:flex-row">
           <div className="flex flex-col gap-9 md:w-1/2">
             <h1 className="ms-9">Contactez-nous</h1>
 
@@ -65,13 +65,13 @@ export default function Contact() {
                   type="Icon"
                   icon="map"
                   title="Adresse"
-                  description={`Toulouse | interventions en Haute-Garonne, en Occitanie, en France`}
+                  description="Toulouse | interventions en Haute-Garonne, en Occitanie, en France"
                 />
               </div>
             </div>
           </div>
 
-          <div className="to-secondary-blue from-primary-blue flex min-h-52 w-full flex-col gap-9 rounded-xl bg-linear-to-br from-65% px-4 pt-9 pb-20 md:w-1/2">
+          <div className="to-secondary-blue from-primary-blue flex min-h-52 w-10/12 flex-col gap-9 rounded-xl bg-linear-to-br from-65% px-4 pt-9 pb-20 md:w-1/2">
             <div>
               <FormContact />
             </div>

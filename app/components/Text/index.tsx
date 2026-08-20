@@ -36,10 +36,9 @@ export default function Text({
       {description.map((paragraph: { desc: string }, index) => (
         <div
           key={index}
-          className={cn(
-            "m-auto w-9/12 text-justify md:text-left",
-            fullWidth ? "w-full" : "",
-          )}
+          className={cn("m-auto text-justify md:text-left lg:w-9/12", {
+            "w-full": fullWidth,
+          })}
           dangerouslySetInnerHTML={{ __html: paragraph.desc }}
         />
       ))}
